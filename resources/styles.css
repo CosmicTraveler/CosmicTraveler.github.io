@@ -1,8 +1,11 @@
+body {
+    line-height: 1.2;
+}
+
 fieldset {
     border: solid 1px black;
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: flex;
+    padding-right: 15px;
     padding-bottom: 10px;
 }
 
@@ -15,16 +18,18 @@ legend {
 
 .column {
     float: left;
-    width: 31%;
-    margin-left: 20px;
+    width: 32%;
+    margin-left: 10px;
     margin-bottom: 10px;
+}
+
+.row {
+    margin-left: 5px;
 }
 
 .div6s {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #dbdbdb79;
-    background-repeat: no-repeat;
-    background-position: 250px 20px;
     border-left: solid 8px #d94800;
     padding: 15px;
 }
@@ -35,13 +40,6 @@ legend {
     background-position: 250px 20px;
     border-left: solid 8px gold;
     padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .parent {
@@ -71,3 +69,10 @@ legend {
 .div5 {
     grid-area: 5 / 1 / 6 / 2;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class="div6s"] {
+      background-color: red;
+    }
+  }
