@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="resources/styles.css">
 
 </head>
@@ -21,786 +23,792 @@
         </nav>
     </div>
 
+    <nav class="nav-c" style="position: fixed;bottom: 0px;">
+        <fieldset style="width: 100px;">
+            <legend>CP</legend>
+            <div style="text-align: center;">
+                <input id="s6cp" type="checkbox" style="margin-left: 10px;" checked> 6★ list
+                <input id="s5cp" type="checkbox" style="margin-left: 10px;" checked> 5★ list
+            </div>
+        </fieldset>
+    </nav>
+
     <div class="parent" style="width: 90%;margin-left: 5%;margin-top: 2%;">
 
-        <div class="div1">
-            <div>
-                <fieldset>
-                    <legend>6★ : List</legend>
-
-                    <div class="row">
-
-                        <div class="column div6s" style="position: relative;">
-
-                            <b style="color: red;">Adolf</b><br>
-
-                            <img src="resources/pic/6s/Adolf.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">146</td>
-                                        <td>(1453)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(135)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Gain 20% more energy when consuming orbs.
-                            Ultimate takes 20% less energy to activate
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Increases all damage by 15% for 10s, decreases damage taken by 20%,
-                            and super armor after ultimate is over
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Basilone</b><br>
-
-                            <img src="resources/pic/6s/Basilone.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">146</td>
-                                        <td>(1453)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(134)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(64)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            3% increase to all attacks, 7% increase to dark damage
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            When dealing damage, there is a 20% chance to summon
-                            a phantom area for 5 seconds. Afterwards,
-                            the phantom area goes on a 5 seconds cooldown.
-                            Enemies standing within the phantom area are
-                            inflicted with corrosion for seconds. Enemies
-                            afflicted with corrosion take 80% dark damage
-                            every 2 seconds and have reduced dark resistance.
-                            When attacking enemies with corrosion there
-                            is a 20% chance to gain 1 random orb. This effect has a <b>12 seconds CD</b>
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Condelina</b><br>
-
-                            <img src="resources/pic/6s/Condelina.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">146</td>
-                                        <td>(1461)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(132)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(67)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase basic attack's damage by 15%
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Basic attacks has a 25% chance to trigger Berserk Mode.
-                            During Berserk Mode, Increase basic attack damage by 15%
-                            and critical chance by 5%. Lasts for 5s, <b>CD: 8s</b>
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Darwin</b><br>
-
-                            <img src="resources/pic/6s/Darwin.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(129)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">21</td>
-                                        <td>(218)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(67)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase all damage by 3% for every orb consumed,
-                            lasts for 4s, up to 5 stacks
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            When consuming an orb, the orb's corresponding color is stored.
-                            When 3 colors are collected, release a 12m radius
-                            shockwave with the character as the center that deals 600% physical damage
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Da vinci</b><br>
-
-                            <img src="resources/pic/6s/Da_Vinci.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(135)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">21</td>
-                                        <td>(218)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            When QTE is triggered, the player-controlled character's
-                            will gain 10% attack and 20% defense for 8s
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            When QTE is triggered through a 3 orb consumption, trigger
-                            another character's QTE, <b>CD: 8s.</b> When all
-                            characters are on the field at once, increase attack by 20%
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Einstein</b><br>
-
-                            <img src="resources/pic/6s/Einstein.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">152</td>
-                                        <td>(1521)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(132)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(219)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            QTE/3 orb skills decreases target's element resistance by 15% for 8 seconds, (Meaning: if a
-                            fire attack hits the target, it decreases fire resistance, if lightning, it decreases
-                            lightning resistance. Physical does not work with this memory) <b>CD: 15s</b>
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            When damaged, open an elemental ring and increase your elemental resistance by 5% + 1% of
-                            your current element resistance for 5s. The ring grants an increase of element damage by
-                            15%, <b>CD : 8s</b>
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Ferret II</b><br>
-
-                            <img src="resources/pic/6s/Ferret_II.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(132)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase healing effectiveness by 10%.
-                            Heals increase the target's physical
-                            damage and defense by 10% for 5s, <b>CD: 8s</b>
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Everytime you cast a healing skill, drone receives one charge.
-                            When the drone is fully charged, the next heal will summon a
-                            healing drone. The drone will automatically follow the
-                            character with the least amout of health on the field,
-                            healing 2% of the character's maximum health every second
-                            in a 5m radius. The area will also increase physical damage
-                            by 15% for 5s. One drone can be deployed every 12s
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Frederick</b><br>
-
-                            <img src="resources/pic/6s/Frederick.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">145</td>
-                                        <td>(1446)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(136)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(64)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Dodging increases movement speed by 15% and all damage by 5%, up to 3 stacks
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Dodging decreases the attacker's speed by 20%
-                            and receives more damage by 15%, lasts for 4s, <b>CD: 8s</b>
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Guinea</b><br>
-
-                            <img src="resources/pic/6s/Guinea.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">153</td>
-                                        <td>(1528)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(132)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(64)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase healing effectiveness by 10%.
-                            Heals increases target's elemental damage
-                            and resistance by 10% for 5s
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Everytime you cast a heal skill,
-                            drone receives one charge. When the drone
-                            is fully charged, the next heal will
-                            summon an elemental drone. The drone will
-                            automatically follow the lowest health character
-                            on the field healing 2% of the character's maximum
-                            health every second in a 5m radius. The area will
-                            also increase elemental damage by 15% for 5s. One
-                            drone can be deployed every 12s
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Hannah</b><br>
-
-                            <img src="resources/pic/6s/Hannah.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">146</td>
-                                        <td>(1453)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(129)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(67)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            3 orb skills deal 25% more damage
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Every 30s, the next 3 orb skill will trigger slowmo.
-                            Character will gain 1 random orb
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Heisen</b><br>
-
-                            <img src="resources/pic/6s/Heisen.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(134)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(219)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase all damage by 3% and lightning damage by 7%
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Each attack has a 25% chance of triggering a 3.5m radius
-                            lightning explosion. The explosion deals 100% damage
-                            and inflict Electrify for 5s to enemies caught in it, <b>CD: 5s.</b>
-                            Electrify decreases enemy's lightning resistance by 8%.
-                            Attacking Electrified enemies have a 20% chance of triggering
-                            Lightning Chain that causes 250% to all enemies inflicted with Electrify.
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Katherine</b><br>
-
-                            <img src="resources/pic/6s/Katherine.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(135)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(218)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            QTE/3 orb skills will decrease the target's physical
-                            defense by 20% for 7 seconds, <b>CD: 10s</b>
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            When damaged, gain a shield equal to 20% of your defense,
-                            blocks the current attack, and gain a 15% increase to
-                            physical damage for 5s, <b>CD: 8s</b>
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">koya</b><br>
-
-                            <img src="resources/pic/6s/koya.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(134)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(66)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            10% additional damage increase
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Gain 20% ultimate energy for every entrance to stage.
-                            Skill orbs deal 10% more damage.
-
-                            <br>
-
-                            <b>6 set Effect</b><br>
-                            When Camu is in Berserker mode,
-                            gain 10% additional damage and 20% movement speed.
-                            Skill orbs will now inflict Terror. The Terror effect
-                            lasts until Berserker mode is over.
-                            Terror: decrease target's attack by 10% and
-                            deal 10% additional damage to the target
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Patton</b><br>
-
-                            <img src="resources/pic/6s/Patton.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">146</td>
-                                        <td>(1453)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(132)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(67)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase critical chance and physical damage by 5%
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            For every non-critical attack dealt,
-                            the next physical attack's critical chance
-                            increases by 2%, stackable up to 20%.
-                            Critical chance is reset once a critical
-                            attack has landed. Physical damage is
-                            increased by 5% whenever you land a
-                            critical strike for 3s, stackable up to 3 times
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Shakespeare</b><br>
-
-                            <img src="resources/pic/6s/Shakespeare.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(134)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(64)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            Increase all damage by 3% and fire damage by 7%
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            Each attack has a 50% chance to inflict Burn to the enemy for 8s.
-                            Attacking Burned enemies has a 20% chance to trigger an explosion,
-                            dealing 100% fire damage. Burned enemies have -8% fire resistance
-                            and take 12% fire damage every second. Stackable up to 3 times.
-                            Burn duration resets after each stack.
-
-                        </div>
-
-                        <div class="column div6s">
-
-                            <b style="color: red;">Zu wen</b><br>
-
-                            <img src="resources/pic/6s/Zu_Wen.webp"
-                                style="position: relative;float: right;margin-top: -5%;">
-
-                            <table>
-                                <thead>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>HP</b></td>
-                                        <td style="text-align: center;">149</td>
-                                        <td>(1491)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>ATK</b></td>
-                                        <td style="text-align: center;">13</td>
-                                        <td>(134)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>DEF</b></td>
-                                        <td style="text-align: center;">22</td>
-                                        <td>(223)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>CRI</b></td>
-                                        <td style="text-align: center;">6</td>
-                                        <td>(64)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <b>2 set Effect</b><br>
-                            ATK increased by 3%, Ice damage increased by 7%
-
-                            <br>
-
-                            <b>4 set Effect</b><br>
-                            When attacking, there is a 30% chance of causing
-                            a Frost state for 5 seconds. When attacking a Frost target,
-                            there is a 20% chance of triggering an ice burst,
-                            causing 420% Ice and applying Frost effect to the
-                            target within a radius of 3 meters. Cooldown 8 seconds.
-                            Frost: Reduce the target's movement speed by 20% and reduce
-                            the resistance to Ice damage by 8%.
-
-                        </div>
+        <div class="div1" id="6star">
+            <fieldset>
+                <legend>6★ : List</legend>
+
+                <div class="row">
+
+                    <div class="column div6s" style="position: relative;">
+
+                        <b style="color: red;">Adolf</b><br>
+
+                        <img src="resources/pic/6s/Adolf.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">146</td>
+                                    <td>(1453)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(135)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Gain 20% more energy when consuming orbs.
+                        Ultimate takes 20% less energy to activate
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Increases all damage by 15% for 10s, decreases damage taken by 20%,
+                        and super armor after ultimate is over
 
                     </div>
 
-                </fieldset>
-            </div>
+                    <div class="column div6s">
+
+                        <b style="color: red;">Basilone</b><br>
+
+                        <img src="resources/pic/6s/Basilone.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">146</td>
+                                    <td>(1453)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(64)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        3% increase to all attacks, 7% increase to dark damage
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        When dealing damage, there is a 20% chance to summon
+                        a phantom area for 5 seconds. Afterwards,
+                        the phantom area goes on a 5 seconds cooldown.
+                        Enemies standing within the phantom area are
+                        inflicted with corrosion for seconds. Enemies
+                        afflicted with corrosion take 80% dark damage
+                        every 2 seconds and have reduced dark resistance.
+                        When attacking enemies with corrosion there
+                        is a 20% chance to gain 1 random orb. This effect has a <b>12 seconds CD</b>
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Condelina</b><br>
+
+                        <img src="resources/pic/6s/Condelina.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">146</td>
+                                    <td>(1461)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(132)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(67)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase basic attack's damage by 15%
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Basic attacks has a 25% chance to trigger Berserk Mode.
+                        During Berserk Mode, Increase basic attack damage by 15%
+                        and critical chance by 5%. Lasts for 5s, <b>CD: 8s</b>
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Darwin</b><br>
+
+                        <img src="resources/pic/6s/Darwin.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(129)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">21</td>
+                                    <td>(218)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(67)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase all damage by 3% for every orb consumed,
+                        lasts for 4s, up to 5 stacks
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        When consuming an orb, the orb's corresponding color is stored.
+                        When 3 colors are collected, release a 12m radius
+                        shockwave with the character as the center that deals 600% physical damage
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Da vinci</b><br>
+
+                        <img src="resources/pic/6s/Da_Vinci.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(135)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">21</td>
+                                    <td>(218)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        When QTE is triggered, the player-controlled character's
+                        will gain 10% attack and 20% defense for 8s
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        When QTE is triggered through a 3 orb consumption, trigger
+                        another character's QTE, <b>CD: 8s.</b> When all
+                        characters are on the field at once, increase attack by 20%
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Einstein</b><br>
+
+                        <img src="resources/pic/6s/Einstein.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">152</td>
+                                    <td>(1521)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(132)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(219)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        QTE/3 orb skills decreases target's element resistance by 15% for 8 seconds, (Meaning: if a
+                        fire attack hits the target, it decreases fire resistance, if lightning, it decreases
+                        lightning resistance. Physical does not work with this memory) <b>CD: 15s</b>
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        When damaged, open an elemental ring and increase your elemental resistance by 5% + 1% of
+                        your current element resistance for 5s. The ring grants an increase of element damage by
+                        15%, <b>CD : 8s</b>
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Ferret II</b><br>
+
+                        <img src="resources/pic/6s/Ferret_II.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(132)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase healing effectiveness by 10%.
+                        Heals increase the target's physical
+                        damage and defense by 10% for 5s, <b>CD: 8s</b>
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Everytime you cast a healing skill, drone receives one charge.
+                        When the drone is fully charged, the next heal will summon a
+                        healing drone. The drone will automatically follow the
+                        character with the least amout of health on the field,
+                        healing 2% of the character's maximum health every second
+                        in a 5m radius. The area will also increase physical damage
+                        by 15% for 5s. One drone can be deployed every 12s
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Frederick</b><br>
+
+                        <img src="resources/pic/6s/Frederick.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">145</td>
+                                    <td>(1446)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(136)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(64)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Dodging increases movement speed by 15% and all damage by 5%, up to 3 stacks
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Dodging decreases the attacker's speed by 20%
+                        and receives more damage by 15%, lasts for 4s, <b>CD: 8s</b>
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Guinea</b><br>
+
+                        <img src="resources/pic/6s/Guinea.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">153</td>
+                                    <td>(1528)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(132)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(64)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase healing effectiveness by 10%.
+                        Heals increases target's elemental damage
+                        and resistance by 10% for 5s
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Everytime you cast a heal skill,
+                        drone receives one charge. When the drone
+                        is fully charged, the next heal will
+                        summon an elemental drone. The drone will
+                        automatically follow the lowest health character
+                        on the field healing 2% of the character's maximum
+                        health every second in a 5m radius. The area will
+                        also increase elemental damage by 15% for 5s. One
+                        drone can be deployed every 12s
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Hannah</b><br>
+
+                        <img src="resources/pic/6s/Hannah.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">146</td>
+                                    <td>(1453)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(129)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(67)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        3 orb skills deal 25% more damage
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Every 30s, the next 3 orb skill will trigger slowmo.
+                        Character will gain 1 random orb
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Heisen</b><br>
+
+                        <img src="resources/pic/6s/Heisen.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(219)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase all damage by 3% and lightning damage by 7%
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Each attack has a 25% chance of triggering a 3.5m radius
+                        lightning explosion. The explosion deals 100% damage
+                        and inflict Electrify for 5s to enemies caught in it, <b>CD: 5s.</b>
+                        Electrify decreases enemy's lightning resistance by 8%.
+                        Attacking Electrified enemies have a 20% chance of triggering
+                        Lightning Chain that causes 250% to all enemies inflicted with Electrify.
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Katherine</b><br>
+
+                        <img src="resources/pic/6s/Katherine.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(135)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(218)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        QTE/3 orb skills will decrease the target's physical
+                        defense by 20% for 7 seconds, <b>CD: 10s</b>
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        When damaged, gain a shield equal to 20% of your defense,
+                        blocks the current attack, and gain a 15% increase to
+                        physical damage for 5s, <b>CD: 8s</b>
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">koya</b><br>
+
+                        <img src="resources/pic/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        10% additional damage increase
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Gain 20% ultimate energy for every entrance to stage.
+                        Skill orbs deal 10% more damage.
+
+                        <br>
+
+                        <b>6 set Effect</b><br>
+                        When Camu is in Berserker mode,
+                        gain 10% additional damage and 20% movement speed.
+                        Skill orbs will now inflict Terror. The Terror effect
+                        lasts until Berserker mode is over.
+                        Terror: decrease target's attack by 10% and
+                        deal 10% additional damage to the target
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Patton</b><br>
+
+                        <img src="resources/pic/6s/Patton.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">146</td>
+                                    <td>(1453)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(132)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(67)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase critical chance and physical damage by 5%
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        For every non-critical attack dealt,
+                        the next physical attack's critical chance
+                        increases by 2%, stackable up to 20%.
+                        Critical chance is reset once a critical
+                        attack has landed. Physical damage is
+                        increased by 5% whenever you land a
+                        critical strike for 3s, stackable up to 3 times
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Shakespeare</b><br>
+
+                        <img src="resources/pic/6s/Shakespeare.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(64)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        Increase all damage by 3% and fire damage by 7%
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Each attack has a 50% chance to inflict Burn to the enemy for 8s.
+                        Attacking Burned enemies has a 20% chance to trigger an explosion,
+                        dealing 100% fire damage. Burned enemies have -8% fire resistance
+                        and take 12% fire damage every second. Stackable up to 3 times.
+                        Burn duration resets after each stack.
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">Zu wen</b><br>
+
+                        <img src="resources/pic/6s/Zu_Wen.webp"
+                            style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(64)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        ATK increased by 3%, Ice damage increased by 7%
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        When attacking, there is a 30% chance of causing
+                        a Frost state for 5 seconds. When attacking a Frost target,
+                        there is a 20% chance of triggering an ice burst,
+                        causing 420% Ice and applying Frost effect to the
+                        target within a radius of 3 meters. Cooldown 8 seconds.
+                        Frost: Reduce the target's movement speed by 20% and reduce
+                        the resistance to Ice damage by 8%.
+
+                    </div>
+
+                </div>
+
+            </fieldset>
         </div>
 
-        <div class="div2">
+        <div class="div2" id="5star">
             <fieldset>
                 <legend>5★ : List</legend>
 
@@ -810,8 +818,7 @@
 
                         <b style="color: red;">Eiffu</b><br>
 
-                        <img src="resources/pic/5s/Eiffu.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                        <img src="resources/pic/5s/Eiffu.webp" style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -854,8 +861,7 @@
 
                         <b style="color: red;">Ekko</b><br>
 
-                        <img src="resources/pic/5s/Ekko.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                        <img src="resources/pic/5s/Ekko.webp" style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -897,8 +903,7 @@
 
                         <b style="color: red;">Erwin</b><br>
 
-                        <img src="resources/pic/5s/Erwin.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                        <img src="resources/pic/5s/Erwin.webp" style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -940,8 +945,7 @@
 
                         <b style="color: red;">Groda</b><br>
 
-                        <img src="resources/pic/5s/Groda.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                        <img src="resources/pic/5s/Groda.webp" style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -985,7 +989,7 @@
                         <b style="color: red;">Lantern Gathering</b><br>
 
                         <img src="resources/pic/5s/Lantern.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1027,7 +1031,7 @@
                         <b style="color: red;">Liv-Reindeer</b><br>
 
                         <img src="resources/pic/5s/Liv-Reindeer.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1071,7 +1075,7 @@
                         <b style="color: red;">Mozart</b><br>
 
                         <img src="resources/pic/5s/Mozart.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1114,7 +1118,7 @@
                         <b style="color: red;">New Year's Firework</b><br>
 
                         <img src="resources/pic/5s/New_Year's_Firework.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1156,7 +1160,7 @@
                         <b style="color: red;">Richelieu</b><br>
 
                         <img src="resources/pic/5s/Richelieu.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1185,8 +1189,9 @@
                             </tbody>
                         </table>
                         <b>2 set Effect</b><br>
-                        Increase healing effectiveness by 5%. Heals increase target's physical damage by 8% for 4s, <b>CD:
-                        5s</b>
+                        Increase healing effectiveness by 5%. Heals increase target's physical damage by 8% for 4s,
+                        <b>CD:
+                            5s</b>
 
                         <br>
 
@@ -1200,7 +1205,7 @@
                         <b style="color: red;">Samanda</b><br>
 
                         <img src="resources/pic/5s/Samanda.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1229,8 +1234,9 @@
                             </tbody>
                         </table>
                         <b>2 set Effect</b><br>
-                        Increase healing effectiveness by 5%. Heals increase target's elemental damage by 8% for 4s, <b>CD:
-                        5s</b>
+                        Increase healing effectiveness by 5%. Heals increase target's elemental damage by 8% for 4s,
+                        <b>CD:
+                            5s</b>
 
                         <br>
 
@@ -1245,7 +1251,7 @@
                         <b style="color: red;">Voltaire</b><br>
 
                         <img src="resources/pic/5s/Voltaire.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                            style="position: relative;float: right;margin-top: -5%;">
 
                         <table>
                             <thead>
@@ -1291,3 +1297,21 @@
 </body>
 
 </html>
+
+<script>
+    $('#s6cp').click(function () {
+        if ($(this).is(':checked')) {
+            $('#6star').load('resources/html/6star.html');
+        } else {
+            $('#6star').html("");
+        }
+    });
+
+    $('#s5cp').click(function () {
+        if ($(this).is(':checked')) {
+            $('#5star').load('resources/html/5star.html');
+        } else {
+            $('#5star').html("");
+        }
+    });
+</script>
