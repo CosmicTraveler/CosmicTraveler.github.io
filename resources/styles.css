@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "IPGA";
+    src: url('ipaexg.ttf');
+}
+
 body {
     line-height: 1.2;
+    font-family: 'IPGA';
 }
 
 fieldset {
@@ -74,14 +80,11 @@ legend {
     background-color:lightblue;
 }
 
+.i {
+    font-size: large;
+}
+
 input[type="checkbox"]
 {
     vertical-align:-1px;
 }
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class="div6s"] {
-      background-color: red;
-    }
-  }
