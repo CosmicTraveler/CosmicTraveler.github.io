@@ -21,25 +21,33 @@
 
     <div style="float: right;margin-right: 5px;">
         <nav style="position: fixed;right: 0px;margin-top: -2%;">
-            scuffed wiki α 0.1 <br> パラドクス•ワンダラー
+            scuffed wiki α 0.3 <br> パラドクス•ワンダラー
         </nav>
     </div>
 
-    <nav class="nav-c" style="position: fixed;bottom: 0px;">
-        <fieldset style="width: 350px;">
-            <legend>CP</legend>
-            <input id="s6cp" type="checkbox" style="margin-left: 20px;" checked> 6★ list
-            <input id="s5cp" type="checkbox" style="margin-left: 10px;" checked> 5★ list
-            &nbsp;|
-            <input id="daily" type="checkbox" style="margin-left: 10px;" checked> daily
-            <input id="weekly" type="checkbox" style="margin-left: 10px;" checked> weekly
-        </fieldset>
+    <nav class="nav-c" style="position: fixed;bottom: 0px;z-index: 1;">
+        CP ]>
+        <input id="s6cp" type="checkbox" style="margin-left: 10px;" checked> 6★ list
+        <input id="s5cp" type="checkbox" style="margin-left: 10px;" checked> 5★ list
+        &nbsp;|
+        <input id="daily" type="checkbox" style="margin-left: 10px;" checked> daily
+        <input id="weekly" type="checkbox" style="margin-left: 10px;" checked> weekly
+        <input id="rookie" type="checkbox" style="margin-left: 10px;" checked> rookie
     </nav>
 
     <nav style="position: fixed;bottom: 15px;right: 15px;">
         <button type="button" data-toggle="modal" data-target="#credit_modal" id="credit">
             <i class="fa fa-file" aria-hidden="true"> credit</i>
         </button>
+    </nav>
+
+    <nav style="position: fixed;top: 10px;left: 15px">
+        <input type="checkbox" class="checkbox checkbox_c" id="chk" />
+        <label class="label" for="chk">
+            <i class="fa fa-moon-o" style="color: black;"></i>&nbsp;
+            <i class="fa fa-sun-o" style="color: white;"></i>
+            <div class="ball"></div>
+        </label>
     </nav>
 
     <div class="row" style="margin-left: 5%;margin-top: 2%;">
@@ -53,7 +61,7 @@
                     <div style="margin-left: 10px;">
                         <b>Standard</b> <br>
                         • Daily first Login <br>
-                        • Clear any battle once <br>
+                        • Clear any battle 1/3/5 time(s) <br>
                         • Clear any coop once <br>
                         • Purchase any item in the shop <br>
                         <a style="color: red;"> • Exchange black cards for stamina once </a><br>
@@ -68,13 +76,11 @@
 
                     <div style="margin-left: 20px;">
                         <b>Dorm</b> <br>
+                        • Complete all dormitory tasks <br>
                         • Place a unit on dorm duty <br>
                         • Trigger and complete dormitory events 3 times <br>
                         • Pet units 3 times <br>
-                        • Recycle furniture once <br>
                         • Make furniture 3 times <br>
-                        • Complete 4 dorm missions <br>
-                        • Complete all dormitory tasks <br>
                     </div>
 
                 </div>
@@ -104,7 +110,80 @@
             </fieldset>
         </div>
 
+    </div>
 
+    <div class="row" style="margin-left: 5%;margin-top: 1%;">
+
+        <div id="rookie_board">
+            <fieldset style="width: 1208px;padding-bottom: 15px;">
+                <legend>Rookie Mission</legend>
+
+                <div class="row">
+
+                    <div style="margin-left: 10px;">
+                        <b>Day 1</b> <br>
+                        • Level up 3 Characters to 15 <br>
+                        • Level up 5-star equipment to 30 <br>
+                        • Clear 5 daily missions <br>
+                        • Salvage 1 4-star equipment <br>
+                        • Clear Story 1-5 <br>
+                    </div>
+
+                    <div style="margin-left: 145px;">
+                        <b>Day 2</b> <br>
+                        • Clear Story 3<br>
+                        • Level up 6 5-star equipments to 30<br>
+                        • Level up 3 Characters to 30<br>
+                        • Clear 6 chapters of Lucia's story<br>
+                        • Clear Rescue Battle Level 2<br>
+                    </div>
+
+                    <div style="margin-left: 20px;">
+                        <b>Day 3</b> <br>
+                        • Pass battle stage 3 times<br>
+                        • Reach Affection level 2 with any Character<br>
+                        • Clear Hidden Story 2<br>
+                        • clear any Character fragment stages 6 times<br>
+                        • Clear AB-2 3 times<br>
+                        • Complete a Bounty mission<br>
+                    </div>
+
+                    <div style="margin-left: 10px;margin-top: 10px;">
+                        <b>Day 4</b> <br>
+                        • Clear boss mission on Chaotic difficulty<br>
+                        • Reach Commander Level 40<br>
+                        • Clear Character Special training stage difficulty 2<br>
+                        • Promote 4 Characters to 3rd Grade<br>
+                        • Upgrade dorm furniture once<br>
+                    </div>
+
+                    <div style="margin-left: 20px;margin-top: 10px;">
+                        <b>Day 5</b> <br>
+                        • Clear Rescue Battle 4<br>
+                        • Level up any equipment to 40<br>
+                        • Reach Commander Level 45<br>
+                        • Level 3 Characters to Level 45<br>
+                    </div>
+
+                    <div style="margin-left: 55px;margin-top: 10px;">
+                        <b>Day 6</b> <br>
+                        • Clear Story 5<br>
+                        • Clear Rescue Battle 6<br>
+                        • Reach 2500CP<br>
+                    </div>
+
+                    <div style="margin-left: 20px;margin-top: 10px;">
+                        <b>Day 7</b> <br>
+                        • Login 7 days<br>
+                        • Reach Commander Level 50<br>
+                        • Promote 4 Characters to TaskForce 2<br>
+                    </div>
+
+                </div>
+
+            </fieldset>
+        </div>
+    
     </div>
 
     <div class="parent" style="width: 90%;margin-left: 5%;margin-top: 5px;">
@@ -676,6 +755,59 @@
                         When damaged, gain a shield equal to 20% of your defense,
                         blocks the current attack, and gain a 15% increase to
                         physical damage for 5s, <b>CD: 8s</b>
+
+                    </div>
+
+                    <div class="column div6s">
+
+                        <b style="color: red;">koya</b><br>
+
+                        <img src="resources/pic/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        10% additional damage increase
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Gain 20% ultimate energy for every entrance to stage.
+                        Skill orbs deal 10% more damage.
+
+                        <br>
+
+                        <b>6 set Effect</b><br>
+                        When Camu is in Berserker mode,
+                        gain 10% additional damage and 20% movement speed.
+                        Skill orbs will now inflict Terror. The Terror effect
+                        lasts until Berserker mode is over.
+                        Terror: decrease target's attack by 10% and
+                        deal 10% additional damage to the target
 
                     </div>
 
@@ -1384,6 +1516,8 @@
                                 <b>Version :</b> <br>
                                 α 0.0 --> 6 & 5 ★ <br>
                                 α 0.1 --> Daily & Weekly mission <br>
+                                α 0.2 --> Dark/Light Mode & correct some daily mission <br>
+                                α 0.3 --> Edit Control panel & add rookie mission <br>
                             </div>
 
                         </div>
@@ -1433,13 +1567,27 @@
         }
     });
 
-    $(document).ready(function(){
-    // Show modal on page load
-    $("#credit_modal").modal('show');
-
-    // Hide modal on button click
-    $(".hide-modal").click(function(){
-        $("#credit_modal").modal('hide');
+    $('#rookie').click(function () {
+        if ($(this).is(':checked')) {
+            $('#rookie_board').load('resources/html/rookie.html');
+        } else {
+            $('#rookie_board').html("");
+        }
     });
-});
+
+    $(document).ready(function(){
+        // Show modal on page load
+        $("#credit_modal").modal('show');
+
+        // Hide modal on button click
+        $(".hide-modal").click(function(){
+            $("#credit_modal").modal('hide');
+        });
+    });
+
+    const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+    });
 </script>

@@ -6,6 +6,7 @@
 body {
     line-height: 1.2;
     font-family: 'IPGA';
+    background-color: white;
 }
 
 fieldset {
@@ -13,6 +14,11 @@ fieldset {
     display: flex;
     padding-right: 15px;
     padding-bottom: 10px;
+}
+
+div {
+    text-align: justify;
+    text-justify: auto;
 }
 
 legend {
@@ -35,7 +41,7 @@ legend {
 
 .div6s {
     grid-area: 1 / 1 / 2 / 2;
-    background-color: #dbdbdb79;
+    background-color: #bebebe79;
     border-left: solid 8px #d94800;
     padding: 15px;
 }
@@ -87,4 +93,68 @@ legend {
 input[type="checkbox"]
 {
     vertical-align:-1px;
+}
+
+.checkbox_c {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 2px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 16px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: white;
+    border-radius: 2px;
+	position: absolute;
+	left: 2px;
+	height: 14px;
+	width: 16px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(20px);
+}
+
+body.dark {
+    background: #292C35;
+    color: rgb(28, 191, 255);
+}
+
+.dark fieldset {
+    border: solid 1px white;
+}
+
+.dark .div6s {
+    background: rgb(66, 66, 66);
+    border-left: solid 8px #d92b00;
+}
+
+.dark .div5s {
+    background: rgb(66, 66, 66);
+}
+
+.dark .label {
+    background-color: white;
+}
+
+.dark .label .ball {
+    background-color: black;
+}
+
+.dark .nav-c {
+    background-color: rgb(32, 33, 37);
 }
