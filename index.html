@@ -21,18 +21,20 @@
 
     <div style="float: right;margin-right: 5px;">
         <nav style="position: fixed;right: 0px;margin-top: -2%;">
-            scuffed wiki α 0.3 <br> パラドクス•ワンダラー
+            scuffed wiki α 0.4 <br> パラドクス•ワンダラー
         </nav>
     </div>
 
     <nav class="nav-c" style="position: fixed;bottom: 0px;z-index: 1;">
         CP ]>
+        <input id="bc" type="checkbox" style="margin-left: 10px;" checked> BC
+        &nbsp;|
         <input id="s6cp" type="checkbox" style="margin-left: 10px;" checked> 6★ list
         <input id="s5cp" type="checkbox" style="margin-left: 10px;" checked> 5★ list
         &nbsp;|
         <input id="daily" type="checkbox" style="margin-left: 10px;" checked> daily
-        <input id="weekly" type="checkbox" style="margin-left: 10px;" checked> weekly
-        <input id="rookie" type="checkbox" style="margin-left: 10px;" checked> rookie
+        <input id="weekly" type="checkbox" style="margin-left: 10px;"> weekly
+        <input id="rookie" type="checkbox" style="margin-left: 10px;"> rookie
     </nav>
 
     <nav style="position: fixed;bottom: 15px;right: 15px;">
@@ -51,6 +53,57 @@
     </nav>
 
     <div class="row" style="margin-left: 5%;margin-top: 2%;">
+
+        <div id="bc_board">
+            <fieldset style="width: 430px;padding-bottom: 3px;">
+                <legend>Black Card Calculate</legend>
+
+                <div class="row">
+
+                    <div style="margin-left: 10px;">
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th width="180px">Black Card</th>
+                                <th width="70px">Day</th>
+                                <th width="70px">Week</th>
+                                <th width="70px">Month</th>
+                              </tr>
+                              <tr>
+                                <td>Daily mission</td>
+                                <td>30</td>
+                                <td>210</td>
+                                <td>900</td>
+                              </tr>
+                              <tr>
+                                <td>Bounty</td>
+                                <td></td>
+                                <td>180</td>
+                                <td>720</td>
+                              </tr>
+                              <tr>
+                                <td>Weekly mission</td>
+                                <td></td>
+                                <td>1000</td>
+                                <td>4000</td>
+                              </tr>
+                              <tr>
+                                <td style="font-weight: bold;">Total</td>
+                                <td style="font-weight: bold;">30</td>
+                                <td style="font-weight: bold;">1390</td>
+                                <td style="font-weight: bold;">5620</td>
+                              </tr>
+                            </thead>
+                            </table>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-left: 5%;margin-top: 1%;">
 
         <div id="daily_board">
             <fieldset style="width: 760px;padding-bottom: 15px;">
@@ -813,6 +866,59 @@
 
                     <div class="column div6s">
 
+                        <b style="color: red;">koya</b><br>
+
+                        <img src="resources/pic/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                        <table>
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>HP</b></td>
+                                    <td style="text-align: center;">149</td>
+                                    <td>(1491)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>ATK</b></td>
+                                    <td style="text-align: center;">13</td>
+                                    <td>(134)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>DEF</b></td>
+                                    <td style="text-align: center;">22</td>
+                                    <td>(223)</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CRI</b></td>
+                                    <td style="text-align: center;">6</td>
+                                    <td>(66)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <b>2 set Effect</b><br>
+                        10% additional damage increase
+
+                        <br>
+
+                        <b>4 set Effect</b><br>
+                        Gain 20% ultimate energy for every entrance to stage.
+                        Skill orbs deal 10% more damage.
+
+                        <br>
+
+                        <b>6 set Effect</b><br>
+                        When Camu is in Berserker mode,
+                        gain 10% additional damage and 20% movement speed.
+                        Skill orbs will now inflict Terror. The Terror effect
+                        lasts until Berserker mode is over.
+                        Terror: decrease target's attack by 10% and
+                        deal 10% additional damage to the target
+
+                    </div>
+
+                    <div class="column div6s">
+
                         <b style="color: red;">Patton</b><br>
 
                         <img src="resources/pic/6s/Patton.webp"
@@ -1465,6 +1571,7 @@
                                 α 0.1 --> Daily & Weekly mission <br>
                                 α 0.2 --> Dark/Light Mode & correct some daily mission <br>
                                 α 0.3 --> Edit Control panel & add rookie mission <br>
+                                α 0.4 --> Adding Black Card farming total <br>
                             </div>
 
                         </div>
@@ -1482,6 +1589,14 @@
 </html>
 
 <script>
+    $('#bc').click(function () {
+        if ($(this).is(':checked')) {
+            $('#bc_board').load('resources/html/bc.html');
+        } else {
+            $('#bc_board').html("");
+        }
+    });
+
     $('#s6cp').click(function () {
         if ($(this).is(':checked')) {
             $('#6star').load('resources/html/6star.html');
