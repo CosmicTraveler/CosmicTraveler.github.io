@@ -4,217 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PGR : scuffed wiki</title>
+    <title>PGR : WIKI</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/new_styles.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="resources/styles.css">
-
-    <style>
-        .example_c {
-            color: #494949 !important;
-            text-transform: uppercase;
-            text-decoration: none;
-            background: #ffffff;
-            padding: 10px;
-            border: 4px solid #494949 !important;
-            display: inline-block;
-            transition: all 0.4s ease 0s;
-        }
-
-        .example_c:hover {
-            color: #ffffff !important;
-            background: #f6b93b;
-            border-color: #f6b93b !important;
-            transition: all 0.4s ease 0s;
-        }
-
-        .column {
-            float: left;
-            width: 32%;
-            height: 350px;
-            margin-left: 10px;
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: red;
-        }
-
-        .dark legend {
-            color: white;
-        }
-
-        .dark #dark_modal {
-            background: #292C35;
-        }
-
-        .dark .example_c {
-            color: red !important;
-            background: rgb(34, 35, 44);
-        }
-    </style>
-
 </head>
 
 <body>
 
-    <div style="float: right;margin-right: 5px;">
-        <nav style="position: fixed;right: 0px;margin-top: -2%;">
-            scuffed wiki α 0.5 <br> パラドクス•ワンダラー
-        </nav>
-    </div>
+    <nav id="mode_toggle">
 
-    <nav style="position: fixed;top: 10px;left: 15px" id="mode_toggle">
-        <input type="checkbox" class="checkbox checkbox_c" id="chk" />
-        <label class="label" for="chk">
-            <i class="fa fa-moon-o" style="color: black;"></i>&nbsp;
-            <i class="fa fa-sun-o" style="color: white;"></i>
-            <div class="ball"></div>
-        </label>
-    </nav>
-
-    <nav style="position: fixed;bottom: 15px;right: 15px;">
-        <button type="button" data-toggle="modal" data-target="#credit_modal" id="credit">
-            <i class="fa fa-file" aria-hidden="true"> credit</i>
-        </button>
-    </nav>
-
-    <div style="width: 90%;margin-left: 5%;margin-top: 2%;" id="tab">
-
-        <div>
-
-            <div style="text-align: center;">
-                <button class="tablink example_c" onclick="openPage('Missions', this)"
-                    id="defaultOpen">Missions</button>
-                <button class="tablink example_c" onclick="openPage('Memories6', this)">Memories 6★</button>
-                <button class="tablink example_c" onclick="openPage('Memories5', this)">Memories 5★</button>
-                <button class="tablink example_c" onclick="openPage('Weapons6', this)" disabled>Weapons 6★</button>
-                <button class="tablink example_c" onclick="openPage('Weapons5', this)" disabled>Weapons 5★</button>
-                <button class="tablink example_c" onclick="openPage('Characters', this)" disabled>Characters</button>
-            </div>
-
+        <div style="padding-top: 1%;text-align: center;">
+            <button class="tablink example_c" onclick="openPage('Missions', this)" id="defaultOpen">Mis<span>sion</span></button>
+            <button class="tablink example_c" onclick="openPage('Memories6', this)">Mem<span>ories&nbsp;6★</span></button>
+            <button class="tablink example_c"
+                onclick="openPage('Memories5', this)">Mem<span>ories&nbsp;5★</span></button>
+            <button class="tablink example_c" onclick="openPage('Weapons6', this)"
+                disabled>Wea<span>pons&nbsp;6★</span></button>
+            <button class="tablink example_c" onclick="openPage('Weapons5', this)"
+                disabled>Wea<span>pons&nbsp;5★</span></button>
+            <button class="tablink example_c" onclick="openPage('Characters', this)"
+                disabled>Cha<span>racters</span></button>
         </div>
 
+    </nav>
+
+    <div class="nav_buttom">
+        &nbsp;&nbsp;&nbsp;&nbsp;scuffed wiki α 0.6 <br> パラドクス•ワンダラー
     </div>
 
-    <div id="Missions" class="tabcontent" style="margin-top: 2%;margin-left: 18%;">
+    <div id="Missions" class="tabcontent" style="margin-top: 1%;margin-left: 1%;margin-right: 1%;">
 
-        <div class="row">
+        <div class="flex div_center">
 
-            <div class="col">
+            <fieldset class="fs">
+                <legend class="mgl2">Black Card Calculate</legend>
 
-                <fieldset style="width: 430px;padding-bottom: 3px;">
-                    <legend>Black Card Calculate</legend>
-
-                    <div style="margin-left: 15px;">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th width="180px">Black Card</th>
-                                    <th width="70px">Day</th>
-                                    <th width="70px">Week</th>
-                                    <th width="70px">Month</th>
-                                </tr>
-                                <tr>
-                                    <td>Daily mission</td>
-                                    <td>30</td>
-                                    <td>210</td>
-                                    <td>900</td>
-                                </tr>
-                                <tr>
-                                    <td>Bounty</td>
-                                    <td></td>
-                                    <td>180</td>
-                                    <td>720</td>
-                                </tr>
-                                <tr>
-                                    <td>Weekly mission</td>
-                                    <td></td>
-                                    <td>1000</td>
-                                    <td>4000</td>
-                                </tr>
-                                <tr>
-                                    <td style="font-weight: bold;">Total</td>
-                                    <td style="font-weight: bold;">30</td>
-                                    <td style="font-weight: bold;">1390</td>
-                                    <td style="font-weight: bold;">5620</td>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-
-                </fieldset>
-
-            </div>
-
-            <div class="col">
-
-                <fieldset style="width: 430px;padding-bottom: 15px;margin-left: 450px;margin-top: -255px;">
-                    <legend>Weekly Mission</legend>
-
-                    <div class="row">
-
-                        <div style="margin-left: 10px;">
-                            <b>Warzone</b> <br>
-                            • Clear Warzone 1/2/3/4/5/6/7/8/9/10/11/12 time(s) <br>
-                            • Get 100,000/200,000 total points in Warzone <br>
-                        </div>
-
-                        <div style="margin-left: 10px;margin-top: 2%;">
-                            <b>Pain Cage</b> <br>
-                            • Clear Pain Cage 1/2/3/4/5/6/7/8/9/10 time(s) <br>
-                            • Get 200,000/400,000 total points in Pain Cage <br>
-                        </div>
-
-                    </div>
-                </fieldset>
-
-            </div>
-
-        </div>
-
-        <div class="row" id="daily_m">
-
-            <fieldset style="width: 880px;padding-bottom: 15px;margin-top: 9%;">
-                <legend>Daily Mission</legend>
-
-                <div class="col">
-
-                    <div style="margin-left: 10px;">
-                        <b>Standard</b> <br>
-                        • Daily first Login <br>
-                        • Clear any battle 1/2/3/5 time(s) <br>
-                        • Clear any coop once <br>
-                        • Purchase any item in the shop <br>
-                        <a style="color: red;"> • Exchange black cards for stamina once </a><br>
-                        • Consume 100 stamina <br>
-                        • Consume 200 stamina <br>
-                        • Consume 300 stamina <br>
-                        • Talk to your Character in the home page once <br>
-                        • Visit dorm once <br>
-                        • Clear Pain Cage 3 times <br>
-                        • Clear War Zone 3 times <br>
-                    </div>
-
+                <div style="margin-left: 15px;">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th width="180px">Black Card</th>
+                                <th width="70px">Day</th>
+                                <th width="70px">Week</th>
+                                <th width="70px">Month</th>
+                            </tr>
+                            <tr>
+                                <td>Daily mission</td>
+                                <td>30</td>
+                                <td>210</td>
+                                <td>900</td>
+                            </tr>
+                            <tr>
+                                <td>Bounty</td>
+                                <td></td>
+                                <td>180</td>
+                                <td>720</td>
+                            </tr>
+                            <tr>
+                                <td>Weekly mission</td>
+                                <td></td>
+                                <td>1000</td>
+                                <td>4000</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold;">Total</td>
+                                <td style="font-weight: bold;">30</td>
+                                <td style="font-weight: bold;">1390</td>
+                                <td style="font-weight: bold;">5620</td>
+                            </tr>
+                        </thead>
+                    </table>
                 </div>
 
-                <div class="col">
+            </fieldset>
 
-                    <div style="margin-left: 10px;">
-                        <b>Dorm</b> <br>
-                        • Complete all dormitory tasks <br>
-                        • Place a unit on dorm duty <br>
-                        • Trigger and complete dormitory events 3 times <br>
-                        • Pet units 3 times <br>
-                        • Make furniture 3 times <br>
-                    </div>
+            <fieldset class="fs2 flex">
+                <legend class="mgl1">Weekly Mission</legend>
 
+                <div style="margin-left: 10px;margin-top: -3%;">
+                    <b>Warzone</b> <br>
+                    • Clear Warzone 1/2/3/4/5/6/7/8/9/10/11/12 time(s) <br>
+                    • Get 100,000/200,000 total points in Warzone <br>
+                </div>
+
+                <div style="margin-left: 10px;margin-top: 2%;">
+                    <b>Pain Cage</b> <br>
+                    • Clear Pain Cage 1/2/3/4/5/6/7/8/9/10 time(s) <br>
+                    • Get 200,000/400,000 total points in Pain Cage <br>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fs3 flex" style="margin-top: 1%;">
+                <legend class="mgl2">Daily Mission</legend>
+
+                <div style="margin-left: 10px;">
+                    <b>Standard</b> <br>
+                    • Daily first Login <br>
+                    • Clear any battle 1/2/3/5 time(s) <br>
+                    • Clear any coop once <br>
+                    • Purchase any item in the shop <br>
+                    <a style="color: red;"> • Exchange black cards for stamina once </a><br>
+                    • Consume 100 stamina <br>
+                    • Consume 200 stamina <br>
+                    • Consume 300 stamina <br>
+                    • Talk to your Character in the home page once <br>
+                    • Visit dorm once <br>
+                    • Clear Pain Cage 3 times <br>
+                    • Clear War Zone 3 times <br>
+                </div>
+
+                <div style="margin-left: 10px;margin-top: 5px;">
+                    <b>Dorm</b> <br>
+                    • Complete all dormitory tasks <br>
+                    • Place a unit on dorm duty <br>
+                    • Trigger and complete dormitory events 3 times <br>
+                    • Pet units 3 times <br>
+                    • Make furniture 3 times <br>
                 </div>
 
             </fieldset>
@@ -223,97 +136,111 @@
 
     </div>
 
-    <div id="Memories6" class="tabcontent" style="margin-top: 2%;margin-left: 5%;width: 90%;">
+    <div id="Memories6" class="tabcontent" style="margin-top: 1%;margin-left: 2%;margin-right: 2%;">
 
-        <div class="parent">
-
-            
-        <fieldset>
+        <fieldset class="fs4 flex">
             <legend>6★ : List</legend>
 
-            <div class="row">
+            <div class="div6s">
 
-                <div class="column div6s">
+                <b style="color: red;">Adolf</b><br>
 
-                    <b style="color: red;">Adolf</b><br>
+                <img src="resources/pic/6s/Adolf.webp" style="position: relative;float: right;margin-top: -5%;">
 
-                    <img src="resources/pic/6s/Adolf.webp" style="position: relative;float: right;margin-top: -5%;">
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(135)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">146</td>
-                                <td>(1453)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(135)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div style="height: 140px">
                     <a><b>2 set Effect</b></a><br>
                     Gain 20% more energy when consuming orbs.
                     Ultimate takes 20% less energy to activate
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Increases all damage by 15% for 10s, decreases damage taken by 20%,
                     and super armor after ultimate is over
-
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Basilone</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Adolf01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Adolf02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Adolf03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Basilone.webp" style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">146</td>
-                                <td>(1453)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(134)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(64)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Basilone</b><br>
+
+                <img src="resources/pic/6s/Basilone.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
                     <a><b>2 set Effect</b></a><br>
                     3% increase to all attacks, 7% increase to dark damage
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     When dealing damage, there is a 20% chance to summon
                     a phantom area for 5 seconds. Afterwards,
@@ -324,232 +251,326 @@
                     every 2 seconds and have reduced dark resistance.
                     When attacking enemies with corrosion there
                     is a 20% chance to gain 1 random orb. This effect has a <b>12 seconds CD</b>
-
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Condelina</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Basilone01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Basilone02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Basilone03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Condelina.webp" style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">146</td>
-                                <td>(1461)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(132)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(67)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            
+            <div class="div6s">
+
+                <b style="color: red;">Condelina</b><br>
+
+                <img src="resources/pic/6s/Condelina.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1461)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
                     <a><b>2 set Effect</b></a><br>
                     Increase basic attack's damage by 15%
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Basic attacks has a 25% chance to trigger Berserk Mode.
                     During Berserk Mode, Increase basic attack damage by 15%
                     and critical chance by 5%. Lasts for 5s, <b>CD: 8s</b>
-
                 </div>
-                
-                <div class="column div6s">
 
-                    <b style="color: red;">Darwin</b><br>
+                <br>
 
-                    <img src="resources/pic/6s/Darwin.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Condelina01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Condelina02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Condelina03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(129)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">21</td>
-                                <td>(218)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(67)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
+
+            </div>
+            
+            
+            <div class="div6s">
+
+                <b style="color: red;">Darwin</b><br>
+
+                <img src="resources/pic/6s/Darwin.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(129)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">21</td>
+                            <td>(218)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
                     <a><b>2 set Effect</b></a><br>
                     Increase all damage by 3% for every orb consumed,
                     lasts for 4s, up to 5 stacks
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     When consuming an orb, the orb's corresponding color is stored.
                     When 3 colors are collected, release a 12m radius
                     shockwave with the character as the center that deals 600% physical damage
-
+    
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Da vinci</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Darwin01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Darwin02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Darwin03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Da_Vinci.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(135)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">21</td>
-                                <td>(218)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            
+            <div class="div6s">
+
+                <b style="color: red;">Da vinci</b><br>
+
+                <img src="resources/pic/6s/Da_Vinci.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(135)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">21</td>
+                            <td>(218)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
                     <a><b>2 set Effect</b></a><br>
                     When QTE is triggered, the player-controlled character's
                     will gain 10% attack and 20% defense for 8s
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     When QTE is triggered through a 3 orb consumption, trigger
                     another character's QTE, <b>CD: 8s.</b> When all
                     characters are on the field at once, increase attack by 20%
-
+    
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Einstein</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Davinci01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Davinci02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Davinci03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Einstein.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">152</td>
-                                <td>(1521)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(132)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(219)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            
+            <div class="div6s">
+
+                <b style="color: red;">Einstein</b><br>
+
+                <img src="resources/pic/6s/Einstein.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">152</td>
+                            <td>(1521)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(219)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     QTE/3 orb skills decreases target's element resistance by 15% for 8 seconds, (Meaning: if a
                     fire attack hits the target, it decreases fire resistance, if lightning, it decreases
                     lightning resistance. Physical does not work with this memory) <b>CD: 15s</b>
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     When damaged, open an elemental ring and increase your elemental resistance by 5% + 1% of
                     your current element resistance for 5s. The ring grants an increase of element damage by
                     15%, <b>CD : 8s</b>
-
+    
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Ferret II</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Einstein01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Einstein02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Einstein03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Ferret_II.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(132)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Ferret II</b><br>
+
+                <img src="resources/pic/6s/Ferret_II.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     Increase healing effectiveness by 10%.
                     Heals increase the target's physical
                     damage and defense by 10% for 5s, <b>CD: 8s</b>
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Everytime you cast a healing skill, drone receives one charge.
                     When the drone is fully charged, the next heal will summon a
@@ -558,93 +579,132 @@
                     healing 2% of the character's maximum health every second
                     in a 5m radius. The area will also increase physical damage
                     by 15% for 5s. One drone can be deployed every 12s
+    
                 </div>
 
+                <br>
+
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/FerretII01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/FerretII02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/FerretII03.png" width="175" height="250" class="pic">
+                </div>
+
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
+
+            </div>
+
+            
+            <div class="div6s">
+
+                <b style="color: red;">Frederick</b><br>
+
+                <img src="resources/pic/6s/Frederick.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">145</td>
+                            <td>(1446)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(136)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
                 
-                <div class="column div6s">
+                <div style="height: 140px">
 
-                    <b style="color: red;">Frederick</b><br>
-
-                    <img src="resources/pic/6s/Frederick.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">145</td>
-                                <td>(1446)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(136)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(64)</td>
-                            </tr>
-                        </tbody>
-                    </table>
                     <a><b>2 set Effect</b></a><br>
                     Dodging increases movement speed by 15% and all damage by 5%, up to 3 stacks
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Dodging decreases the attacker's speed by 20%
                     and receives more damage by 15%, lasts for 4s, <b>CD: 8s</b>
-
+    
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Guinea</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Frederick01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Frederick02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Frederick03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Guinea.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">153</td>
-                                <td>(1528)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(132)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(64)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Guinea</b><br>
+
+                <img src="resources/pic/6s/Guinea.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">153</td>
+                            <td>(1528)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     Increase healing effectiveness by 10%.
                     Heals increases target's elemental damage
                     and resistance by 10% for 5s
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Everytime you cast a heal skill,
                     drone receives one charge. When the drone
@@ -655,91 +715,129 @@
                     health every second in a 5m radius. The area will
                     also increase elemental damage by 15% for 5s. One
                     drone can be deployed every 12s
-
+    
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Hannah</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Guinea01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Guinea02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Guinea03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Hannah.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">146</td>
-                                <td>(1453)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(129)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(67)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Hannah</b><br>
+
+                <img src="resources/pic/6s/Hannah.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(129)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     3 orb skills deal 25% more damage
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Every 30s, the next 3 orb skill will trigger slowmo.
                     Character will gain 1 random orb
-
+    
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Heisen</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Hannah01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Hannah02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Hannah03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Heisen.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(134)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(219)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Heisen</b><br>
+
+                <img src="resources/pic/6s/Heisen.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(219)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     Increase all damage by 3% and lightning damage by 7%
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Each attack has a 25% chance of triggering a 3.5m radius
                     lightning explosion. The explosion deals 100% damage
@@ -750,45 +848,64 @@
 
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Katherine</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Heisen01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Heisen02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Heisen03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Katherine.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(135)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(218)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Katherine</b><br>
+
+                <img src="resources/pic/6s/Katherine.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(135)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(218)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     QTE/3 orb skills will decrease the target's physical
                     defense by 20% for 7 seconds, <b>CD: 10s</b>
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     When damaged, gain a shield equal to 20% of your defense,
                     blocks the current attack, and gain a 15% increase to
@@ -796,50 +913,69 @@
 
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">koya</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Katherine01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Katherine02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Katherine03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(134)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(66)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">koya</b><br>
+
+                <img src="resources/pic/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     10% additional damage increase
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Gain 20% ultimate energy for every entrance to stage.
                     Skill orbs deal 10% more damage.
-
+    
                     <br>
-
-                    <b>6 set Effect</b><br>
+    
+                    <a><b>6 set Effect</b></a><br>
                     When Camu is in Berserker mode,
                     gain 10% additional damage and 20% movement speed.
                     Skill orbs will now inflict Terror. The Terror effect
@@ -849,44 +985,126 @@
 
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Patton</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/koya01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/koya02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/koya03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Patton.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">146</td>
-                                <td>(1453)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(132)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(67)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            
+            <div class="div6s">
+
+                <b style="color: red;">Lee uwen hoek</b><br>
+
+                <img src="resources/pic/6s/Leeuwenhoek.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">156</td>
+                            <td>(1506)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a><b>2 set Effect</b></a><br>
+                    3% attack increase, 7% physical damage increase.
+    
+                    <br>
+    
+                    <a><b>4 set Effect</b></a><br>
+                    20% increase to the effect of Spear of Insight. Deal 5% more damage
+                    to target's that has been inflicted with Spear of Insight.
+
+                </div>
+
+                <br>
+
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Leeuwenhoek01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Leeuwenhoek02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Leeuwenhoek03.png" width="175" height="250" class="pic">
+                </div>
+
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Patton</b><br>
+
+                <img src="resources/pic/6s/Patton.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     Increase critical chance and physical damage by 5%
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     For every non-critical attack dealt,
                     the next physical attack's critical chance
@@ -898,44 +1116,63 @@
 
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Shakespeare</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Patton01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Patton02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Patton03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Shakespeare.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(134)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(64)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Shakespeare</b><br>
+
+                <img src="resources/pic/6s/Shakespeare.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     Increase all damage by 3% and fire damage by 7%
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     Each attack has a 50% chance to inflict Burn to the enemy for 8s.
                     Attacking Burned enemies has a 20% chance to trigger an explosion,
@@ -945,44 +1182,63 @@
 
                 </div>
 
-                <div class="column div6s">
+                <br>
 
-                    <b style="color: red;">Zu wen</b><br>
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Shakespeare01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Shakespeare02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Shakespeare03.png" width="175" height="250" class="pic">
+                </div>
 
-                    <img src="resources/pic/6s/Zu_Wen.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
 
-                    <table>
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><b>HP</b></td>
-                                <td style="text-align: center;">149</td>
-                                <td>(1491)</td>
-                            </tr>
-                            <tr>
-                                <td><b>ATK</b></td>
-                                <td style="text-align: center;">13</td>
-                                <td>(134)</td>
-                            </tr>
-                            <tr>
-                                <td><b>DEF</b></td>
-                                <td style="text-align: center;">22</td>
-                                <td>(223)</td>
-                            </tr>
-                            <tr>
-                                <td><b>CRI</b></td>
-                                <td style="text-align: center;">6</td>
-                                <td>(64)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Zu wen</b><br>
+
+                <img src="resources/pic/6s/Zu_Wen.webp"
+                    style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div style="height: 140px">
+
                     <a><b>2 set Effect</b></a><br>
                     ATK increased by 3%, Ice damage increased by 7%
-
+    
                     <br>
-
+    
                     <a><b>4 set Effect</b></a><br>
                     When attacking, there is a 30% chance of causing
                     a Frost state for 5 seconds. When attacking a Frost target,
@@ -994,552 +1250,74 @@
 
                 </div>
 
+                <br>
+
+                <div class="flex remh" >
+                    <img src="resources/pic/fullpic/6s/Zuwen01.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Zuwen02.png" width="175" height="250" class="pic">
+                    <img src="resources/pic/fullpic/6s/Zuwen03.png" width="175" height="250" class="pic">
+                </div>
+
+                <div class="mgl_text">
+                    <span class="margin18">[1/4]</span>
+                    <span class="margin22">[2/5]</span>
+                    <span class="margin24">[3/6]</span>
+                </div>
+
             </div>
+
+        </div>
 
         </fieldset>
 
-        </div>
+    </div>
 
     </div>
 
-    
+
     <div id="Memories5" class="tabcontent" style="margin-top: 2%;margin-left: 5%;width: 90%;">
-
-        <div class="parent">
-
-            <fieldset>
-                <legend>5★ : List</legend>
-        
-                <div class="row">
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Eiffu</b><br>
-        
-                        <img src="resources/pic/5s/Eiffu.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">132</td>
-                                    <td>(1184)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(107)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">20</td>
-                                    <td>(181)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(54)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase all damage by 2% for every orb consumed, lasts for 3s. 5 stacks max, with each stack
-                        resetting the buff's duration
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Every 60s, the next 3 orb skill will trigger slowmo
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Ekko</b><br>
-        
-                        <img src="resources/pic/5s/Ekko.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(109)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">20</td>
-                                    <td>(181)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(51)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase all damage by 2% and elemental damage 4%
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        There's a 15% chance to Burn, Shock, Freeze, and Corrode(depending on the element). Lasts for 5s
-                        with a cooldown of 8s on each enemy
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Erwin</b><br>
-        
-                        <img src="resources/pic/5s/Erwin.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">132</td>
-                                    <td>(1184)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(107)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">20</td>
-                                    <td>(181)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(54)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase basic attack's damage by 10%
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Increase basic attack's damage by 15%. Buff disappears when attacked, returns after 12s
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Groda</b><br>
-        
-                        <img src="resources/pic/5s/Groda.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">137</td>
-                                    <td>(1232)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(107)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">19</td>
-                                    <td>(177)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(53)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Attacks decrease enemy's resistance by 6% for 5s, <b>CD: 12s</b>
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Enemies within 5m has 6% lower elemental resistance when you are attacked, lasts for 7s.
-                        Triggering again will reset the effect
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Lantern Gathering</b><br>
-        
-                        <img src="resources/pic/5s/Lantern.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(109)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">19</td>
-                                    <td>(177)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(53)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        After using a 3 orb combo or QTE, summon a lantern that follows all allies on the field for 15
-                        seconds. The lantern buffs nearby allies, increasing their attack and movement speed by 7%. This
-                        effect has a 30 seconds cooldown
-        
-                        <br>
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Liv-Reindeer</b><br>
-        
-                        <img src="resources/pic/5s/Liv-Reindeer.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(109)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">19</td>
-                                    <td>(177)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(53)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase orbs' damage and healing effectiveness by 5%
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        There's a 20% chance of dropping a christmas present near an enemy when attacking. Picking up
-                        the box will recover 5 energy and increase all damage by 5%, <b>CD: 10s</b>
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Mozart</b><br>
-        
-                        <img src="resources/pic/5s/Mozart.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(109)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">19</td>
-                                    <td>(177)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">5</td>
-                                    <td>(53)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase all damage by 15% when in slowmo
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Deal 200% damage to all enemies on screen when slowmo is triggered
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">New Year's Firework</b><br>
-        
-                        <img src="resources/pic/5s/New_Year's_Firework.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(109)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">19</td>
-                                    <td>(177)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(53)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Attack increases by 5%. After consuming 3 red orbs, summon 4 red packets in a ring shape. The
-                        red packets will deal 10% fire damage when they come in contact with the enemy, lasts for 10
-                        seconds, 30 seconds cooldown
-        
-                        <br>
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Richelieu</b><br>
-        
-                        <img src="resources/pic/5s/Richelieu.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(107)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">20</td>
-                                    <td>(181)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">6</td>
-                                    <td>(53)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase healing effectiveness by 5%. Heals increase target's physical damage by 8% for 4s, <b>CD:
-                        5s</b>
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Gain a random orb for every 8 orbs consumed, <b>CD: 5s</b>
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Samanda</b><br>
-        
-                        <img src="resources/pic/5s/Samanda.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">134</td>
-                                    <td>(1208)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(107)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">20</td>
-                                    <td>(185)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">5</td>
-                                    <td>(51)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Increase healing effectiveness by 5%. Heals increase target's elemental damage by 8% for 4s, <b>CD:
-                        5s</b>
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Heals will leave an elemental ring. Increase elemental damage by 8% and elemental resistance by
-                        5%, <b>CD: 10s</b>
-        
-                    </div>
-        
-                    <div class="column div5s">
-        
-                        <b style="color: red;">Voltaire</b><br>
-        
-                        <img src="resources/pic/5s/Voltaire.webp"
-                        style="position: relative;float: right;margin-top: -5%;">
-        
-                        <table>
-                            <thead>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><b>HP</b></td>
-                                    <td style="text-align: center;">137</td>
-                                    <td>(1232)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>ATK</b></td>
-                                    <td style="text-align: center;">12</td>
-                                    <td>(107)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>DEF</b></td>
-                                    <td style="text-align: center;">20</td>
-                                    <td>(181)</td>
-                                </tr>
-                                <tr>
-                                    <td><b>CRI</b></td>
-                                    <td style="text-align: center;">5</td>
-                                    <td>(51)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <a><b>2 set Effect</b></a><br>
-                        Attacks decrease enemy's defense by 10% for 5s, <b>CD: 12s</b>
-        
-                        <br>
-        
-                        <a><b>4 set Effect</b></a><br>
-                        Decrease target's physical defense by 15% when attacked, lasts for 7s. Stackable up to 2 times
-        
-                    </div>
-        
-                </div>
-        
-            </fieldset>        
-
-        </div>
-
     </div>
 
     <div id="Weapons6" class="tabcontent" style="margin-top: 2%;margin-left: 18%;">
-        <h3>WIP</h3>
     </div>
 
     <div id="Weapons5" class="tabcontent" style="margin-top: 2%;margin-left: 18%;">
-        <h3>WIP</h3>
     </div>
 
     <div id="Characters" class="tabcontent" style="margin-top: 2%;margin-left: 18%;">
-        <h3>WIP</h3>
     </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="credit_modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content" id="dark_modal">
-                    <div style="margin-left: 2%;margin-top: 2%;">
-                        <fieldset style="width: 575px;padding-bottom: 15px;">
-                            <legend>credit :</legend>
-    
-                            <div class="row">
-    
-                                <div style="margin-left: 25px;">
-                                    <b> Aqualia#5733 </b><br><br>
-                                    <b>Version :</b> <br>
-                                    α 0.0 --> 6 & 5 ★ <br>
-                                    α 0.1 --> Daily & Weekly mission <br>
-                                    α 0.2 --> Dark/Light Mode & correct some daily mission <br>
-                                    α 0.3 --> Edit Control panel & add rookie mission <br>
-                                    α 0.4 --> Adding Black Card farming total <br>
-                                    α 0.5 --> Rework <br>
-                                </div>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="credit_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="dark_modal">
+                <div style="margin-left: 2%;margin-top: 2%;">
+                    <fieldset style="width: 575px;padding-bottom: 15px;">
+                        <legend>credit :</legend>
+
+                        <div class="row">
+
+                            <div style="margin-left: 25px;">
+                                <b> Aqualia#5733 </b><br><br>
+                                <b>Version :</b> <br>
+                                α 0.0 --> 6 & 5 ★ <br>
+                                α 0.1 --> Daily & Weekly mission <br>
+                                α 0.2 --> Dark/Light Mode & correct some daily mission <br>
+                                α 0.3 --> Edit Control panel & add rookie mission <br>
+                                α 0.4 --> Adding Black Card farming total <br>
+                                α 0.5 --> Rework <br>
                             </div>
-                        </fieldset>
-                    </div>
-                    <div style="text-align: center;padding-bottom: 2%;">
-                        <br>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+                <div style="text-align: center;padding-bottom: 2%;">
+                    <br>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
+    </div>
 
 </body>
 
@@ -1571,9 +1349,4 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
-    const chk = document.getElementById('chk');
-
-    chk.addEventListener('change', () => {
-        document.body.classList.toggle('dark');
-    });
 </script>
