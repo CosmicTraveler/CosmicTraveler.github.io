@@ -14,6 +14,10 @@ nav {
     height: 6vh;
 }
 
+a_color {
+    color: rgb(0, 60, 255);
+}
+
 .div_center {
     margin-left: 17%;
     margin-top: 2%;
@@ -67,7 +71,7 @@ nav {
 
 .fs4 {
     width: 96vw;
-    height: 4640px;
+    height: 4850px;
     padding-bottom: 3px;
     margin-right: 1%;
 }
@@ -104,7 +108,19 @@ legend {
     border-style: groove;
     border-color: rgba(35, 148, 223, 0.733);
     width: 630px;
-    height: 500px;
+    height: 530px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ad1400;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.div6s_small {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 630px;
+    height: 530px;
     margin-left: 1%;
     background-color: #bebebe41;
     border-left: solid 8px #ad1400;
@@ -118,7 +134,7 @@ legend {
 }
 
 .margin18 {
-    margin-left: 18%;
+    margin-left: 17%;
 }
 
 .margin22 {
@@ -126,7 +142,7 @@ legend {
 }
 
 .margin24 {
-    margin-left: 24%;
+    margin-left: 23%;
 }
 
 .remh {
@@ -134,12 +150,204 @@ legend {
     height: 220px;
 }
 
+#show_pic {
+    display: block;
+    visibility: visible;
+}
+
+#cc_6s_1 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_2 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_3 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_4 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_5 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_6 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_7 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_8 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_9 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_10 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_11 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_12 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_13 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_14 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_15 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_16 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_17 {
+    display: none;
+    visibility: hidden;
+}
+
+.carousel-inner>.item {
+    -webkit-transition: -webkit-transform 1.2s ease-in-out !important;
+    -o-transition: -o-transform 1.2s ease-in-out !important;
+    transition: transform 1.2s ease-in-out !important;
+}
+
 @media only screen and (max-width: 600px) {
 
+    #show_pic {
+        display: none;
+        visibility: hidden;
+    }
+
+    #cc_6s_1 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_2 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_3 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_4 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_5 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_6 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_7 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_8 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_9 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_10 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_11 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_12 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_13 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_14 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_15 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_16 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_17 {
+        display: block;
+        visibility: visible;
+    }
+
     .div6s {
+        height: 46rem;
         margin-left: 5px;
         margin-right: -10px;
-        height: 500px;
+    }
+
+    .div6s_small {
+        height: 38rem;
+        margin-left: 5px;
+        margin-right: -10px;
     }
 
     .remh {
@@ -171,8 +379,8 @@ legend {
     }
 
     .fs4 {
-        width: 94vw;
-        height: 8700px;
+        width: 96vw;
+        height: 11620px;
         padding-bottom: 3px;
     }
 
