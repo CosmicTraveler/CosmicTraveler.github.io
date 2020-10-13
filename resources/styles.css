@@ -37,7 +37,7 @@ a_color {
 
 .example_c:hover {
     color: #ffffff !important;
-    padding-right: 90px;
+    padding-right: 105px;
     background: #f6b93b;
     border-color: #f6b93b !important;
     transition: all 0.6s ease 0s;
@@ -72,6 +72,13 @@ a_color {
 .fs4 {
     width: 96vw;
     height: 4850px;
+    padding-bottom: 3px;
+    margin-right: 1%;
+}
+
+.fs5 {
+    width: 96vw;
+    height: 2900px;
     padding-bottom: 3px;
     margin-right: 1%;
 }
@@ -128,6 +135,18 @@ legend {
     margin-bottom: 5px;
 }
 
+.div5s_small {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 630px;
+    height: 470px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ff9900;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
 .pic {
     width: 175;
     height: 250;
@@ -150,7 +169,18 @@ legend {
     height: 220px;
 }
 
+.remh2 {
+    margin-left: 5%;
+    height: 220px;
+}
+
 #show_pic {
+    display: block;
+    visibility: visible;
+}
+
+#show_pic2 {
+    margin-top: -55px;
     display: block;
     visibility: visible;
 }
@@ -247,6 +277,8 @@ legend {
 }
 
 @media only screen and (max-width: 600px) {
+
+    /* 6S zone -------------------------------------------------*/
 
     #show_pic {
         display: none;
@@ -415,4 +447,26 @@ legend {
         margin-bottom: 2vh;
     }
 
+    /*----------------------------------------------------------*/
+    
+    /* 5S zone -------------------------------------------------*/
+    
+    #show_pic2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .fs5 {
+        width: 96vw;
+        height: 6270px;
+        padding-bottom: 3px;
+    }
+
+    .div5s_small {
+        height: 35rem;
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+    
+    /*----------------------------------------------------------*/
 }
