@@ -442,12 +442,6 @@ li input[type="checkbox"] {
 
 @media only screen and (max-width: 600px) {
 
-    .fs_log {
-        width: 92vw;
-        padding-bottom: 3px;
-        margin-right: 1%;
-    }
-
     /* 6S zone -------------------------------------------------*/
 
     #show_pic {
