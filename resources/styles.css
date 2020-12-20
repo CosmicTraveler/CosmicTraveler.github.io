@@ -75,7 +75,7 @@ a_color2 {
 
 .fs4 {
     width: 96vw;
-    height: 4850px;
+    height: 5400px;
     padding-bottom: 3px;
     margin-right: 1%;
 }
@@ -276,6 +276,16 @@ legend {
 }
 
 #cc_6s_17 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_18 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_19 {
     display: none;
     visibility: hidden;
 }
@@ -540,6 +550,16 @@ li input[type="checkbox"] {
         visibility: visible;
     }
 
+    #cc_6s_18 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_19 {
+        display: block;
+        visibility: visible;
+    }
+
     .div6s {
         height: 46rem;
         margin-left: 5px;
@@ -582,7 +602,7 @@ li input[type="checkbox"] {
 
     .fs4 {
         width: 96vw;
-        height: 11620px;
+        height: 13200px;
         padding-bottom: 3px;
     }
 
@@ -725,7 +745,7 @@ li input[type="checkbox"] {
         border-style: groove;
         border-color: rgba(158, 158, 158, 0.575);
         width: 630px;
-        height: 320px;
+        height: 460px;
         margin-left: 1%;
         background-color: #aaf9ff41;
         border-left: solid 8px #ea08ff;
