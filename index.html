@@ -14,60 +14,70 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="resources/jquery.localize.min.js"></script>
 
 </head>
 
-<body>
+<body id="body">
 
     <nav id="mode_toggle">
 
         <div style="padding-top: 1%;text-align: center;">
             <button class="tablink example_c" onclick="openPage('Missions', this)" id="defaultOpen">Mis<span>sion</span></button>
             <button class="tablink example_c" onclick="openPage('Memories6', this)">Mem<span>ories&nbsp;6★</span></button>
-            <button class="tablink example_c"
-                onclick="openPage('Memories5', this)">Mem<span>ories&nbsp;5★</span></button>
-            <button class="tablink example_c" onclick="openPage('Weapon', this)"
-                id="defaultOpen">Wea<span>pons&nbsp;</span></button>
-            <button class="tablink example_c" onclick="openPage('Characters', this)"
-                disabled>Cha<span>racters</span></button>
+            <button class="tablink example_c" onclick="openPage('Memories5', this)">Mem<span>ories&nbsp;5★</span></button>
+            <button class="tablink example_c" onclick="openPage('Weapon', this)">Wea<span>pons&nbsp;</span></button>
+            <button class="tablink example_c" onclick="openPage('Characters', this)" disabled>Cha<span>racters</span></button>
         </div>
 
     </nav>
 
     <div class="nav_buttom">
-        &nbsp;&nbsp;&nbsp;&nbsp;scuffed wiki α 0.8
+        &nbsp;&nbsp;&nbsp;&nbsp;PGR wiki α 0.8 multi-lang
     </div>
 
+    <div class="nav_lang">
+        <div class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              LANGUAGE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" id="EN">English</a> 
+              <a class="dropdown-item" href="#" id="VN">Vietnam</a>
+            </div>
+          </div>
+    </div>
+    
     <div id="Missions" class="tabcontent" style="margin-top: 1%;margin-left: 1%;margin-right: 1%;">
 
         <div class="flex div_center">
 
             <fieldset class="fs">
-                <legend class="mgl2">Black Card Calculate</legend>
+                <legend class="mgl2">Black Card</legend>
 
                 <div style="margin-left: 15px;">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th width="180px">Black Card</th>
-                                <th width="70px">Day</th>
-                                <th width="70px">Week</th>
-                                <th width="70px">Month</th>
+                                <th width="70px" data-localize="BC.Day"></th>
+                                <th width="70px" data-localize="BC.Week"></th>
+                                <th width="70px" data-localize="BC.Month"></th>
                             </tr>
                             <tr>
-                                <td>Daily mission</td>
+                                <td data-localize="BC.Daily"></td>
                                 <td>30</td>
                                 <td>210</td>
                                 <td>900</td>
                             </tr>
                             <tr>
-                                <td>Weekly mission</td>
+                                <td data-localize="BC.Weekly"></td>
                                 <td></td>
                                 <td>1000</td>
                                 <td>4000</td>
                             </tr>
                             <tr>
-                                <td style="font-weight: bold;">Total</td>
+                                <td data-localize="BC.Total" style="font-weight: bold;"></td>
                                 <td style="font-weight: bold;">30</td>
                                 <td style="font-weight: bold;">1210</td>
                                 <td style="font-weight: bold;">4900</td>
@@ -79,47 +89,22 @@
             </fieldset>
 
             <fieldset class="fs2 flex">
-                <legend class="mgl1">Weekly Mission</legend>
+                <legend class="mgl1" data-localize="Weekly.Board"></legend>
 
-                <div style="margin-left: 10px;margin-top: -3%;">
-                    <b>Warzone</b> <br>
-                    • Clear Warzone 1/2/3/4/5/6/7/8/9/10/11/12 time(s) <br>
-                    • Get 100,000/200,000 total points in Warzone <br>
+                <div style="margin-left: 10px;margin-top: -3%;" data-localize="Weekly.Mission.1">
                 </div>
 
-                <div style="margin-left: 10px;margin-top: 2%;">
-                    <b>Pain Cage</b> <br>
-                    • Clear Pain Cage 1/2/3/4/5/6/7/8/9/10 time(s) <br>
-                    • Get 200,000/400,000 total points in Pain Cage <br>
+                <div style="margin-left: 10px;margin-top: 2%;" data-localize="Weekly.Mission.2">
                 </div>
             </fieldset>
 
             <fieldset class="fs3 flex" style="margin-top: 1%;">
-                <legend class="mgl2">Daily Mission</legend>
+                <legend class="mgl2" data-localize="Daily.Board"></legend>
 
-                <div style="margin-left: 10px;">
-                    <b>Standard</b> <br>
-                    • Daily first Login <br>
-                    • Clear any battle 1/2/3/5 time(s) <br>
-                    • Clear any coop once <br>
-                    • Purchase any item in the shop <br>
-                    <a style="color: red;"> • Exchange black cards for stamina once </a><br>
-                    • Consume 100 stamina <br>
-                    • Consume 200 stamina <br>
-                    • Consume 300 stamina <br>
-                    • Talk to your Character in the home page once <br>
-                    • Visit dorm once <br>
-                    • Clear Pain Cage 3 times <br>
-                    • Clear War Zone 3 times <br>
+                <div style="margin-left: 10px;" data-localize="Daily.Mission.1">
                 </div>
 
-                <div style="margin-left: 10px;margin-top: 5px;">
-                    <b>Dorm</b> <br>
-                    • Complete all dormitory tasks <br>
-                    • Place a unit on dorm duty <br>
-                    • Trigger and complete dormitory events 3 times <br>
-                    • Pet units 3 times <br>
-                    • Make furniture 3 times <br>
+                <div style="margin-left: 10px;margin-top: 5px;" data-localize="Daily.Mission.2">
                 </div>
 
             </fieldset>
@@ -128,6 +113,7 @@
 
     </div>
 
+    
     <div id="Memories6" class="tabcontent" style="margin-top: 1%;margin-left: 2%;margin-right: 2%;">
 
         <fieldset class="fs4 flex">
@@ -170,16 +156,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Gain 20% more energy when consuming orbs.
-                    Ultimate takes 20% less energy to activate
+                    <a data-localize="Memories.6star.Adolf.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Increases all damage by 15% for 10s, decreases damage taken by 20%,
-                    and super armor after ultimate is over
+                    <a data-localize="Memories.6star.Adolf.4"></a>
+
                 </div>
 
                 <br>
@@ -266,21 +251,21 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    5% additional damage increase to normal attacks. 7% physical damage increase.
+                    <a data-localize="Memories.6star.Anjun.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Blue orb's anti-CC buff lasts for an additional 2 seconds. Gain 15% physical damage when the buff is present.
+                    <a data-localize="Memories.6star.Anjun.4"></a>
                 
                     <br>
 
                     <a>
                         <a_color><b>6 set Effect</b></a_color>
                     </a><br>
-                    Gain 24 energy when you enter Condensed Will state. Gain 3 color orbs, one of each after releasing ultimate.
+                    <a data-localize="Memories.6star.Anjun.6"></a>
                 
                 </div>
 
@@ -368,22 +353,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    3% increase to all attacks, 7% increase to dark damage
+                    <a data-localize="Memories.6star.Basilone.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    When dealing damage, there is a 20% chance to summon
-                    a phantom area for 5 seconds. Afterwards,
-                    the phantom area goes on a 5 seconds cooldown.
-                    Enemies standing within the phantom area are
-                    inflicted with corrosion for seconds. Enemies
-                    afflicted with corrosion take 80% dark damage
-                    every 2 seconds and have reduced dark resistance.
-                    When attacking enemies with corrosion there
-                    is a 20% chance to gain 1 random orb. This effect has a <b>12 seconds CD</b>
+                    <a data-localize="Memories.6star.Basilone.4"></a>
+
                 </div>
 
                 <br>
@@ -471,16 +449,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase basic attack's damage by 15%
+                    <a data-localize="Memories.6star.Condelina.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Basic attacks has a 25% chance to trigger Berserk Mode.
-                    During Berserk Mode, Increase basic attack damage by 15%
-                    and critical chance by 5%. Lasts for 5s, <b>CD: 8s</b>
+                    <a data-localize="Memories.6star.Condelina.4"></a>
+
                 </div>
 
                 <br>
@@ -568,18 +545,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase all damage by 3% for every orb consumed,
-                    lasts for 4s, up to 5 stacks
+                    <a data-localize="Memories.6star.Darwin.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    When consuming an orb, the orb's corresponding color is stored.
-                    When 3 colors are collected, release a 12m radius
-                    shockwave with the character as the center that deals 600% physical damage
-
+                    <a data-localize="Memories.6star.Darwin.4"></a>
+                    
                 </div>
 
                 <br>
@@ -667,17 +641,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    When QTE is triggered, the player-controlled character's
-                    will gain 10% attack and 20% defense for 8s
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    When QTE is triggered through a 3 orb consumption, trigger
-                    another character's QTE, <b>CD: 8s.</b> When all
-                    characters are on the field at once, increase attack by 20%
+                    <a data-localize="Memories.6star.Da_vinci.4"></a>
 
                 </div>
 
@@ -767,18 +738,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    QTE/3 orb skills decreases target's element resistance by 15% for 8 seconds, (Meaning: if a
-                    fire attack hits the target, it decreases fire resistance, if lightning, it decreases
-                    lightning resistance. Physical does not work with this memory) <b>CD: 15s</b>
+                    <a data-localize="Memories.6star.Einstein.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    When damaged, open an elemental ring and increase your elemental resistance by 5% + 1% of
-                    your current element resistance for 5s. The ring grants an increase of element damage by
-                    15%, <b>CD : 8s</b>
+                    <a data-localize="Memories.6star.Einstein.4"></a>
 
                 </div>
 
@@ -867,22 +834,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase healing effectiveness by 10%.
-                    Heals increase the target's physical
-                    damage and defense by 10% for 5s, <b>CD: 8s</b>
+                    <a data-localize="Memories.6star.Ferret_II.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Everytime you cast a healing skill, drone receives one charge.
-                    When the drone is fully charged, the next heal will summon a
-                    healing drone. The drone will automatically follow the
-                    character with the least amout of health on the field,
-                    healing 2% of the character's maximum health every second
-                    in a 5m radius. The area will also increase physical damage
-                    by 15% for 5s. One drone can be deployed every 12s
+                    <a data-localize="Memories.6star.Ferret_II.4"></a>
 
                 </div>
 
@@ -971,14 +930,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    5% dark damage and attack increase
+                    <a data-localize="Memories.6star.Flamel.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    After entering Annihilation mode, increase dark damage and ultimate damage by 30%. Gain 10 energy after consuming an Annihilation Orb.
+                    <a data-localize="Memories.6star.Flamel.4"></a>
 
                 </div>
 
@@ -1067,15 +1026,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Dodging increases movement speed by 15% and all damage by 5%, up to 3 stacks
+                    <a data-localize="Memories.6star.Frederick.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Dodging decreases the attacker's speed by 20%
-                    and receives more damage by 15%, lasts for 4s, <b>CD: 8s</b>
+                    <a data-localize="Memories.6star.Frederick.4"></a>
 
                 </div>
 
@@ -1164,24 +1122,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase healing effectiveness by 10%.
-                    Heals increases target's elemental damage
-                    and resistance by 10% for 5s
+                    <a data-localize="Memories.6star.Guinea.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Everytime you cast a heal skill,
-                    drone receives one charge. When the drone
-                    is fully charged, the next heal will
-                    summon an elemental drone. The drone will
-                    automatically follow the lowest health character
-                    on the field healing 2% of the character's maximum
-                    health every second in a 5m radius. The area will
-                    also increase elemental damage by 15% for 5s. One
-                    drone can be deployed every 12s
+                    <a data-localize="Memories.6star.Guinea.4"></a>
 
                 </div>
 
@@ -1270,15 +1218,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    3 orb skills deal 25% more damage
+                    <a data-localize="Memories.6star.Hannah.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Every 30s, the next 3 orb skill will trigger slowmo.
-                    Character will gain 1 random orb
+                    <a data-localize="Memories.6star.Hannah.4"></a>
 
                 </div>
 
@@ -1367,19 +1314,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase all damage by 3% and lightning damage by 7%
+                    <a data-localize="Memories.6star.Heisen.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Each attack has a 25% chance of triggering a 3.5m radius
-                    lightning explosion. The explosion deals 100% damage
-                    and inflict Electrify for 5s to enemies caught in it, <b>CD: 5s.</b>
-                    Electrify decreases enemy's lightning resistance by 8%.
-                    Attacking Electrified enemies have a 20% chance of triggering
-                    Lightning Chain that causes 250% to all enemies inflicted with Electrify.
+                    <a data-localize="Memories.6star.Heisen.4"></a>
 
                 </div>
 
@@ -1468,17 +1410,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    QTE/3 orb skills will decrease the target's physical
-                    defense by 20% for 7 seconds, <b>CD: 10s</b>
+                    <a data-localize="Memories.6star.Katherine.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    When damaged, gain a shield equal to 20% of your defense,
-                    blocks the current attack, and gain a 15% increase to
-                    physical damage for 5s, <b>CD: 8s</b>
+                    <a data-localize="Memories.6star.Katherine.4"></a>
 
                 </div>
 
@@ -1567,27 +1506,21 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    10% additional damage increase
+                    <a data-localize="Memories.6star.koya.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Gain 20% ultimate energy for every entrance to stage.
-                    Skill orbs deal 10% more damage.
+                    <a data-localize="Memories.6star.koya.4"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>6 set Effect</b></a_color>
                     </a><br>
-                    When Camu is in Berserker mode,
-                    gain 10% additional damage and 20% movement speed.
-                    Skill orbs will now inflict Terror. The Terror effect
-                    lasts until Berserker mode is over.
-                    Terror: decrease target's attack by 10% and
-                    deal 10% additional damage to the target
+                    <a data-localize="Memories.6star.koya.6"></a>
 
                 </div>
 
@@ -1676,15 +1609,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    3% attack increase, 7% physical damage increase.
+                    <a data-localize="Memories.6star.Lee_uwen_hoek.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    20% increase to the effect of Spear of Insight. Deal 5% more damage
-                    to target's that has been inflicted with Spear of Insight.
+                    <a data-localize="Memories.6star.Lee_uwen_hoek.4"></a>
 
                 </div>
 
@@ -1773,20 +1705,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase critical chance and physical damage by 5%
+                    <a data-localize="Memories.6star.Patton.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    For every non-critical attack dealt,
-                    the next physical attack's critical chance
-                    increases by 2%, stackable up to 20%.
-                    Critical chance is reset once a critical
-                    attack has landed. Physical damage is
-                    increased by 5% whenever you land a
-                    critical strike for 3s, stackable up to 3 times
+                    <a data-localize="Memories.6star.Patton.4"></a>
 
                 </div>
 
@@ -1875,18 +1801,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase all damage by 3% and fire damage by 7%
+                    <a data-localize="Memories.6star.Shakespeare.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Each attack has a 50% chance to inflict Burn to the enemy for 8s.
-                    Attacking Burned enemies has a 20% chance to trigger an explosion,
-                    dealing 100% fire damage. Burned enemies have -8% fire resistance
-                    and take 12% fire damage every second. Stackable up to 3 times.
-                    Burn duration resets after each stack.
+                    <a data-localize="Memories.6star.Shakespeare.4"></a>
 
                 </div>
 
@@ -1975,20 +1897,14 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    ATK increased by 3%, Ice damage increased by 7%
+                    <a data-localize="Memories.6star.Zu_wen.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    When attacking, there is a 30% chance of causing
-                    a Frost state for 5 seconds. When attacking a Frost target,
-                    there is a 20% chance of triggering an ice burst,
-                    causing 420% Ice and applying Frost effect to the
-                    target within a radius of 3 meters. Cooldown 8 seconds.
-                    Frost: Reduce the target's movement speed by 20% and reduce
-                    the resistance to Ice damage by 8%.
+                    <a data-localize="Memories.6star.Zu_wen.4"></a>
 
                 </div>
 
@@ -2086,15 +2002,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase all damage by 2% for every orb consumed, lasts for 3s. 5 stacks max, with each stack
-                    resetting the buff's duration
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Every 60s, the next 3 orb skill will trigger slowmo
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2181,14 +2097,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase all damage by 2% and elemental damage 4%
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    There's a 15% chance to Burn, Shock, Freeze, and Corrode(depending on the element). Lasts for 5s
-                with a cooldown of 8s on each enemy
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2276,14 +2193,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase basic attack's damage by 10%
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Increase basic attack's damage by 15%. Buff disappears when attacked, returns after 12s
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2371,15 +2289,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Attacks decrease enemy's resistance by 6% for 5s, <b>CD: 12s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Enemies within 5m has 6% lower elemental resistance when you are attacked, lasts for 7s.
-                    Triggering again will reset the effect
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2467,9 +2385,7 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    After using a 3 orb combo or QTE, summon a lantern that follows all allies on the field for 15
-                    seconds. The lantern buffs nearby allies, increasing their attack and movement speed by 7%. This
-                    effect has a 30 seconds cooldown
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                 </div>
 
@@ -2544,15 +2460,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase orbs' damage and healing effectiveness by 5%
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    There's a 20% chance of dropping a christmas present near an enemy when attacking. Picking up
-                    the box will recover 5 energy and increase all damage by 5%, <b>CD: 10s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2626,14 +2542,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase all damage by 15% when in slowmo
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Deal 200% damage to all enemies on screen when slowmo is triggered
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2721,9 +2638,7 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Attack increases by 5%. After consuming 3 red orbs, summon 4 red packets in a ring shape. The
-                red packets will deal 10% fire damage when they come in contact with the enemy, lasts for 10
-                seconds, 30 seconds cooldown
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                 </div>
 
@@ -2812,15 +2727,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase healing effectiveness by 5%. Heals increase target's physical damage by 8% for 4s, <b>CD:
-                        5s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Gain a random orb for every 8 orbs consumed, <b>CD: 5s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -2908,16 +2823,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Increase healing effectiveness by 5%. Heals increase target's elemental damage by 8% for 4s, <b>CD:
-                        5s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Heals will leave an elemental ring. Increase elemental damage by 8% and elemental resistance by
-                5%, <b>CD: 10s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -3005,14 +2919,15 @@
                     <a>
                         <a_color><b>2 set Effect</b></a_color>
                     </a><br>
-                    Attacks decrease enemy's defense by 10% for 5s, <b>CD: 12s</b>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
 
                     <br>
 
                     <a>
                         <a_color><b>4 set Effect</b></a_color>
                     </a><br>
-                    Decrease target's physical defense by 15% when attacked, lasts for 7s. Stackable up to 2 times
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
                 </div>
 
                 <br>
@@ -3074,17 +2989,17 @@
             <legend>Control Panel</legend>
 
             <div style="margin: auto;" id="div_weapon_cp">
-                <input id="Bows" type="checkbox" style="margin-left: 10px;" checked> Bows
-                <input id="Chainsaws" type="checkbox" style="margin-left: 10px;"> Chainsaws
-                <input id="Compositor_Greatswords" type="checkbox" style="margin-left: 10px;"> Compositor Greatswords
-                <input id="Drone_Cannons" type="checkbox" style="margin-left: 10px;"> Drone Cannons
-                <input id="Greatswords" type="checkbox" style="margin-left: 10px;"> Greatswords
-                <input id="Handguns" type="checkbox" style="margin-left: 10px;"> Handguns
-                <input id="Handheld_Cannons" type="checkbox" style="margin-left: 10px;"> Handheld Cannons
-                <input id="Kukris" type="checkbox" style="margin-left: 10px;"> Kukris
-                <input id="Scythe" type="checkbox" style="margin-left: 10px;"> Scythe
-                <input id="Spear" type="checkbox" style="margin-left: 10px;"> Spear
-                <input id="Swords" type="checkbox" style="margin-left: 10px;"> Swords
+                <input id="Bows" type="checkbox" style="margin-left: 10px;" checked><label for="Bows" data-localize="Weapon.Control.Bows"></label>
+                <input id="Chainsaws" type="checkbox" style="margin-left: 5px;"><label for="Chainsaws" data-localize="Weapon.Control.Chainsaws"></label>
+                <input id="Compositor_Greatswords" type="checkbox" style="margin-left: 5px;"><label for="Compositor_Greatswords" data-localize="Weapon.Control.Compositor_Greatswords"></label>
+                <input id="Drone_Cannons" type="checkbox" style="margin-left: 5px;"><label for="Drone_Cannons" data-localize="Weapon.Control.Drone_Cannons"></label>
+                <input id="Greatswords" type="checkbox" style="margin-left: 5px;"><label for="Greatswords" data-localize="Weapon.Control.Greatswords"></label>
+                <input id="Handguns" type="checkbox" style="margin-left: 5px;"><label for="Handguns" data-localize="Weapon.Control.Handguns"></label>
+                <input id="Handheld_Cannons" type="checkbox" style="margin-left: 5px;"><label for="Handheld_Cannons" data-localize="Weapon.Control.Handheld_Cannons"></label>
+                <input id="Kukris" type="checkbox" style="margin-left: 5px;"><label for="Kukris" data-localize="Weapon.Control.Kukris"></label>
+                <input id="Scythe" type="checkbox" style="margin-left: 5px;"><label for="Scythe" data-localize="Weapon.Control.Scythes"></label>
+                <input id="Spear" type="checkbox" style="margin-left: 5px;"><label for="Spear" data-localize="Weapon.Control.Spears"></label>
+                <input id="Swords" type="checkbox" style="margin-left: 5px;"><label for="Swords" data-localize="Weapon.Control.Swords"></label>
             </div>
 
         </fieldset>
@@ -3147,7 +3062,7 @@
                         <a>
                             <a_color2><b>Rolling Thunder</b></a_color2>
                         </a><br>
-                        15% Lightning damage increase. Trigger a Lightning strike after dealing lightning damage using skills 5 times on a single target, dealing 150% Lightning damage, 2 seconds cooldown
+                        <a data-localize="Weapon.Bows.Lightning"></a>
                         <br><br>
                         
                     </div>
@@ -3208,7 +3123,7 @@
                         <a>
                             <a_color2><b>??????</b></a_color2>
                         </a><br>
-                        15% Increase to ultimate damage. Increase physical damage received by enemies by 2% everytime your ultimate hits them for 5 seconds, stacks up to 8 times
+                        <a data-localize="Weapon.Bows.Ramiel"></a>
                         <br><br>
 
                     </div>
@@ -3269,8 +3184,7 @@
                         <a>
                             <a_color2><b>??????</b></a_color2>
                         </a><br>
-                        Critical chance and critical damage increases by 10% when there are no enemies within 2 meters
-
+                        <a data-localize="Weapon.Bows.Saker_E-3320"></a>
                         <br><br>
 
                     </div>
@@ -3313,9 +3227,7 @@
 
     </div>
 
-    <div id="Characters" class="tabcontent" style="margin-top: 2%;margin-left: 18%;">
-    </div>
-
+    
     <!-- Modal -->
     <div class="modal fade" id="credit_modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -3327,7 +3239,7 @@
                         <div class="row">
 
                             <div style="margin-left: 35px;">
-                                10/25/20 --> Adding Weapon [6&5★] Completed
+                                01/29/21 --> Adding Multi language
                                 <br><br>                               
                             </div>
 
@@ -3335,7 +3247,8 @@
                                 <b>Credit :</b> <br>
                                 Data [Translate/Icon] Credit : PGR FANDOM maintainer <br>
                                 Picture [PGR Asset] &nbsp;&nbsp;&nbsp;&nbsp;Credit : <a href="https://discord.gg/JErpUEk">Ascendants Discord</a><br>
-                                This site maintainer : <b> Aqualia#5733 </b><br><br>
+                                This site maintainer : <b> Aqualia#5733 </b><br>
+                                Vietnam Language : <a href="https://github.com/hungofhydra">hungofhydra</a><br><br>
                             </div>
 
                             <div style="margin-left: 35px;">
@@ -3360,6 +3273,33 @@
 </html>
 
 <script>
+
+    $("[data-localize]").localize("language")
+    $("[data-localize]").localize("language", { language: "en" })
+
+    $('#EN').click(function () {
+        document.getElementById("body").style.fontFamily = "IPGA";
+        $("[data-localize]").localize("language")
+        $("[data-localize]").localize("language", { language: "en" })
+    });
+
+    $('#VN').click(function () {
+        document.getElementById("body").style.fontFamily = "Times New Roman";
+        $("[data-localize]").localize("language")
+        $("[data-localize]").localize("language", { language: "vn" })
+    });
+
+    //using a string will skip ONLY if the language code matches exactly
+    //this would prevent loading only if the language was "en-US"
+    $("[data-localize]").localize("language", { skipLanguage: "en-US" })
+
+    //using a regex will skip if the regex matches
+    //this would prevent loading of any english language translations
+    $("[data-localize]").localize("language", { skipLanguage: /^en/ })
+
+    //using an array of strings will skip if any of the strings matches exactly
+    $("[data-localize]").localize("language", { skipLanguage: ["en", "en-US"] })
+
     function openPage(pageName, elmnt, color) {
         // Hide all elements with class="tabcontent" by default */
         var i, tabcontent, tablinks;
@@ -3551,14 +3491,6 @@
             $('#div_kukris').load('resources/html/weapon/spear.html');
         } else {
             $('#div_kukris').html("");
-        }
-    });
-    
-    $('#checkbox11').click(function () {
-        if ($(this).is(':checked')) {
-            $('#div_spear').load('resources/html/weapon/spear.html');
-        } else {
-            $('#div_spear').html("");
         }
     });
     

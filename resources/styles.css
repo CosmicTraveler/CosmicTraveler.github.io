@@ -1,6 +1,6 @@
 @font-face {
     font-family: "IPGA";
-    src: url('ipaexg.ttf');
+    src: url('ipaexg.ttf') format('truetype');
 }
 
 body {
@@ -68,7 +68,7 @@ a_color2 {
 
 .fs3 {
     width: 870px;
-    height: 280px;
+    height: 300px;
     padding-bottom: 3px;
     margin-right: 1%;
 }
@@ -116,6 +116,15 @@ legend {
     position: fixed;
     bottom: 5px;
     right: 15px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(0, 162, 255);
+    z-index: 1;
+}
+
+.nav_lang {
+    position: fixed;
+    right: 5px;
+    top: 5px;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px rgb(0, 162, 255);
     z-index: 1;
@@ -410,6 +419,17 @@ li label{
     transition: all .2s;
 }
 
+li .label_c{
+    width: 90px;
+    margin: 3px 0px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all .2s;
+}
+
 li label {
     padding: 1px 4px;
     cursor: pointer;
@@ -450,13 +470,11 @@ li input[type="checkbox"] {
   opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
+.fs_log {
+    width: 35vw;
+}
 
-    .fs_log {
-        width: 92vw;
-        padding-bottom: 3px;
-        margin-right: 1%;
-    }
+@media only screen and (max-width: 600px) {
 
     /* 6S zone -------------------------------------------------*/
 
@@ -602,7 +620,7 @@ li input[type="checkbox"] {
 
     .fs4 {
         width: 96vw;
-        height: 13200px;
+        height: 11620px;
         padding-bottom: 3px;
     }
 
