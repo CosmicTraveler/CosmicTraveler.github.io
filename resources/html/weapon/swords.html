@@ -36,8 +36,7 @@
                         <a>
                             <a_color2><b>Red Snow</b></a_color2>
                         </a><br>
-                        Increase 15% Ice Damage. Increase 10% all damage after a 3 orb combo,
-                        last for 5 seconds.
+                        <a data-localize="Weapon.Swords.Julia"></a>
                         <br><br>
 
                     </div>
@@ -98,10 +97,7 @@
                         <a>
                             <a_color2><b>Shadow of Rebellion</b></a_color2>
                         </a><br>
-                        Every time Lightning damage is dealt, increase Lightning damage by 5%,
-                        last for 4 seconds, tacks up to 4 times, triggering it again will refresh the duration.
-                        Gain 10% extra damage after releasing ultimate, last for 10 seconds, triggering it
-                        again will refresh the duration.
+                        <a data-localize="Weapon.Swords.Kageuchi-Break"></a>
                         <br><br>
 
                     </div>
@@ -160,12 +156,9 @@
                     <div id="height_weapon">
 
                         <a>
-                            <a_color2><b>Magic Sword</b></a_color2>
+                            <a_color2><b>Furious Blade</b></a_color2>
                         </a><br>
-                        Every time Lightning damage is dealt, increase Lightning damage by 5%,
-                        last for 4 seconds, tacks up to 4 times, triggering it again will refresh the duration.
-                        Gain 10% extra damage after releasing ultimate, last for 10 seconds, triggering it
-                        again will refresh the duration.
+                        <a data-localize="Weapon.Swords.Red_Lotus_Fanatic"></a>
                         <br><br>
 
                     </div>
@@ -180,7 +173,7 @@
                             <br>
                         </div>
                         
-                        <img src="resources/pic/character/Signature/lucia-red_lotus.png" width="128" height="128">
+                        <img src="resources/pic/character/signature/lucia-red_lotus.png" width="128" height="128">
 
                         <div style="line-height:10px;">
                             <br>
@@ -226,8 +219,7 @@
                         <a>
                             <a_color2><b>Falling Cherry Blossoms</b></a_color2>
                         </a><br>
-                        Gain 20% more energy when consuming orbs.
-                        Ultimate takes 20% less energy to activate
+                        <a data-localize="Weapon.Swords.Red_Sakura"></a>
                         <br><br>
 
                     </div>
@@ -242,7 +234,7 @@
                             <br>
                         </div>
                         
-                        <img src="resources/pic/character/Signature/alpha-crimson_abyss.png" width="128" height="128">
+                        <img src="resources/pic/character/signature/alpha-crimson_abyss.png" width="128" height="128">
 
                         <div style="line-height:10px;">
                             <br>
@@ -288,9 +280,7 @@
                         <a>
                             <a_color2><b>Heart of Thorns</b></a_color2>
                         </a><br>
-                        Dark damage increased by 15%. When attacking,
-                        there is a 15% chance of releasing a shadow impact,
-                        causing 75% ATK of Dark damage, and and enter cooldown for 0.5s.
+                        <a data-localize="Weapon.Swords.Sariel"></a>
                         <br><br>
 
                     </div>
@@ -351,9 +341,7 @@
                         <a>
                             <a_color2><b>Energy Manifestation</b></a_color2>
                         </a><br>
-                        Increase all damage by 5%. When using skill orbs,
-                        accumulate energy based on the number of skill orbs usage.
-                        At 50 energy, summon Sirius for 45 seconds. Cooldown for 60 seconds
+                        <a data-localize="Weapon.Swords.Sirius"></a>
                         <br><br>
 
                     </div>
@@ -394,10 +382,7 @@
                         <a>
                             <a_color2><b>Magic Sword</b></a_color2>
                         </a><br>
-                        Every time Lightning damage is dealt, increase Lightning damage by 5%,
-                        last for 4 seconds, tacks up to 4 times, triggering it again will refresh the duration.
-                        Gain 10% extra damage after releasing ultimate, last for 10 seconds, triggering it
-                        again will refresh the duration.
+                        <a data-localize="Weapon.Swords.Kuji_no_Ken"></a>
                         <br><br>
 
                     </div>
@@ -405,3 +390,18 @@
                 </div>
 
             </fieldset>
+
+<script>
+    $("[data-localize]").localize("language")
+    $("[data-localize]").localize("language", { language: "en" })
+
+    $('#EN').click(function () {
+        $("[data-localize]").localize("language")
+        $("[data-localize]").localize("language", { language: "en" })
+    });
+
+    $('#VN').click(function () {
+        $("[data-localize]").localize("language")
+        $("[data-localize]").localize("language", { language: "vn" })
+    });
+</script>
