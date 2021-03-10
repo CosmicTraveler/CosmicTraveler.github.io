@@ -1,138 +1,3345 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGR : WIKI</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="resources/jquery.localize.min.js"></script>
+
+</head>
+
+<body id="body">
+
+    <nav id="mode_toggle">
+
+        <div style="padding-top: 1%;text-align: center;">
+            <button class="tablink example_c" onclick="openPage('Missions', this)" id="defaultOpen">Mis<span>sion</span></button>
+            <button class="tablink example_c" onclick="openPage('Memories6', this)">Mem<span>ories&nbsp;6★</span></button>
+            <button class="tablink example_c" onclick="openPage('Memories5', this)">Mem<span>ories&nbsp;5★</span></button>
+            <button class="tablink example_c" onclick="openPage('Weapon', this)">Wea<span>pons&nbsp;</span></button>
+            <button class="tablink example_c" onclick="openPage('Characters', this)" disabled>Cha<span>racters</span></button>
+        </div>
+
+    </nav>
+
+    <div class="nav_buttom">
+        &nbsp;&nbsp;&nbsp;&nbsp;PGR wiki α 0.8 multi-lang
+    </div>
+
+    <div class="nav_lang">
+        <div class="dropdown">
+            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              LANGUAGE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" id="EN">English</a> 
+              <a class="dropdown-item" href="#" id="VN">Vietnam</a>
+            </div>
+          </div>
+    </div>
     
-    <title>My New Hugo Site</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="">
-    <meta name="generator" content="Hugo 0.64.0" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    
+    <div id="Missions" class="tabcontent" style="margin-top: 1%;margin-left: 1%;margin-right: 1%;">
 
-    
+        <div class="flex div_center">
 
-  
-  
-    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
-  
+            <fieldset class="fs">
+                <legend class="mgl2">Black Card</legend>
 
+                <div style="margin-left: 15px;">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th width="180px">Black Card</th>
+                                <th width="70px" data-localize="BC.Day"></th>
+                                <th width="70px" data-localize="BC.Week"></th>
+                                <th width="70px" data-localize="BC.Month"></th>
+                            </tr>
+                            <tr>
+                                <td data-localize="BC.Daily"></td>
+                                <td>30</td>
+                                <td>210</td>
+                                <td>900</td>
+                            </tr>
+                            <tr>
+                                <td data-localize="BC.Weekly"></td>
+                                <td></td>
+                                <td>1000</td>
+                                <td>4000</td>
+                            </tr>
+                            <tr>
+                                <td data-localize="BC.Total" style="font-weight: bold;"></td>
+                                <td style="font-weight: bold;">30</td>
+                                <td style="font-weight: bold;">1210</td>
+                                <td style="font-weight: bold;">4900</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
 
+            </fieldset>
 
+            <fieldset class="fs2 flex">
+                <legend class="mgl1" data-localize="Weekly.Board"></legend>
 
-    
-      
+                <div style="margin-left: 10px;margin-top: -3%;" data-localize="Weekly.Mission.1">
+                </div>
 
-    
+                <div style="margin-left: 10px;margin-top: 2%;" data-localize="Weekly.Mission.2">
+                </div>
+            </fieldset>
 
-    
-    
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
-      
-    
-    
-    <meta property="og:title" content="My New Hugo Site" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/" />
+            <fieldset class="fs3 flex" style="margin-top: 1%;">
+                <legend class="mgl2" data-localize="Daily.Board"></legend>
 
-<meta itemprop="name" content="My New Hugo Site">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My New Hugo Site"/>
-<meta name="twitter:description" content=""/>
+                <div style="margin-left: 10px;" data-localize="Daily.Mission.1">
+                </div>
 
-	
-  </head>
+                <div style="margin-left: 10px;margin-top: 5px;" data-localize="Daily.Mission.2">
+                </div>
 
-  <body class="ma0 avenir bg-near-white">
+            </fieldset>
 
-    
-
-  <header>
-    <div class="pb3-m pb6-l bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        My New Hugo Site
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
 
     </div>
-  </div>
-</nav>
 
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          My New Hugo Site
-        </h1>
+    
+    <div id="Memories6" class="tabcontent" style="margin-top: 1%;margin-left: 2%;margin-right: 2%;">
+
+        <fieldset class="fs4 flex">
+            <legend>6★ : List</legend>
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Adolf</b><br>
+
+                <img src="resources/pic/memory/6s/Adolf.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(135)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Adolf.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Adolf.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Adolf01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Adolf02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Adolf03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_1" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Adolf01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Adolf02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Adolf03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Anjun</b><br>
+
+                <img src="resources/pic/memory/6s/Anjun.png" style="position: relative;float: right;margin-top: -5%;" height="128" width="128">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">148</td>
+                            <td>(1476)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(219)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Anjun.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Anjun.4"></a>
+                
+                    <br>
+
+                    <a>
+                        <a_color><b>6 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Anjun.6"></a>
+                
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Anjun01.png" width="175" height="220" class="pic" style="z-index: -5;">
+                        <img src="resources/pic/memory/fullpic/6s/Anjun02.png" width="175" height="220" class="pic" style="z-index: -5;">
+                        <img src="resources/pic/memory/fullpic/6s/Anjun03.png" width="175" height="220" class="pic" style="z-index: -5;">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_18" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 42%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Anjun01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: 5px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Anjun02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: 5px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Anjun03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: 5px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_18" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_18" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Basilone</b><br>
+
+                <img src="resources/pic/memory/6s/Basilone.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Basilone.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Basilone.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Basilone01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Basilone02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Basilone03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_2" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 48%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Basilone01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Basilone02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Basilone03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Condelina</b><br>
+
+                <img src="resources/pic/memory/6s/Condelina.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1461)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Condelina.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Condelina.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Condelina01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Condelina02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Condelina03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_3" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Condelina01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Condelina02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Condelina03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Darwin</b><br>
+
+                <img src="resources/pic/memory/6s/Darwin.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(129)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">21</td>
+                            <td>(218)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Darwin.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Darwin.4"></a>
+                    
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Darwin01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Darwin02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Darwin03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_4" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Darwin01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Darwin02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Darwin03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Da vinci</b><br>
+
+                <img src="resources/pic/memory/6s/Da_Vinci.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(135)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">21</td>
+                            <td>(218)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Davinci01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Davinci02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Davinci03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_5" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Davinci01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Davinci02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Davinci03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_5" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_5" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="div6s">
+
+                <b style="color: red;">Einstein</b><br>
+
+                <img src="resources/pic/memory/6s/Einstein.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">152</td>
+                            <td>(1521)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(219)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Einstein.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Einstein.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Einstein01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Einstein02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Einstein03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_6" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Einstein01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Einstein02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Einstein03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_6" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_6" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Ferret II</b><br>
+
+                <img src="resources/pic/memory/6s/Ferret_II.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Ferret_II.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Ferret_II.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/FerretII01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/FerretII02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/FerretII03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_7" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 48%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/FerretII01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/FerretII02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/FerretII03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_7" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_7" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Flamel</b><br>
+
+                <img src="resources/pic/memory/6s/Flamel.png" style="position: relative;float: right;margin-top: -5%;" height="128" width="128">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">154</td>
+                            <td>(1536)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Flamel.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Flamel.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Flamel01.png" width="175" height="180" class="pic" style="margin-top: 5%;">
+                        <img src="resources/pic/memory/fullpic/6s/Flamel02.png" width="175" height="180" class="pic" style="margin-top: 5%;">
+                        <img src="resources/pic/memory/fullpic/6s/Flamel03.png" width="175" height="180" class="pic" style="margin-top: 5%;">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_19" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Flamel01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Flamel02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Flamel03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_19" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_19" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Frederick</b><br>
+
+                <img src="resources/pic/memory/6s/Frederick.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">145</td>
+                            <td>(1446)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(136)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Frederick.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Frederick.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Frederick01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Frederick02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Frederick03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_19" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Frederick01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Frederick02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Frederick03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_19" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_19" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Guinea</b><br>
+
+                <img src="resources/pic/memory/6s/Guinea.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">153</td>
+                            <td>(1528)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Guinea.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Guinea.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Guinea01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Guinea02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Guinea03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_9" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Guinea01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Guinea02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Guinea03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_9" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_9" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Hannah</b><br>
+
+                <img src="resources/pic/memory/6s/Hannah.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(129)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Hannah.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Hannah.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Hannah01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Hannah02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Hannah03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_10" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Hannah01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Hannah02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Hannah03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_10" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_10" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Heisen</b><br>
+
+                <img src="resources/pic/memory/6s/Heisen.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(219)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Heisen.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Heisen.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Heisen01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Heisen02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Heisen03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_11" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Heisen01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Heisen02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Heisen03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_11" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_11" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Katherine</b><br>
+
+                <img src="resources/pic/memory/6s/Katherine.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(135)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(218)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Katherine.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Katherine.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Katherine01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Katherine02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Katherine03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_12" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Katherine01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Katherine02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Katherine03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_12" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_12" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">koya</b><br>
+
+                <img src="resources/pic/memory/6s/koya.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(66)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.koya.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.koya.4"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>6 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.koya.6"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/koya01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/koya02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/koya03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_13" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/koya01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/koya02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/koya03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_13" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_13" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s_small">
+
+                <b style="color: red;">Lee uwen hoek</b><br>
+
+                <img src="resources/pic/memory/6s/Leeuwenhoek.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">156</td>
+                            <td>(1506)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Lee_uwen_hoek.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Lee_uwen_hoek.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Leeuwenhoek01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Leeuwenhoek02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Leeuwenhoek03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_14" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 5%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Leeuwenhoek01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Leeuwenhoek02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Leeuwenhoek03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_14" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_14" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Patton</b><br>
+
+                <img src="resources/pic/memory/6s/Patton.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">146</td>
+                            <td>(1453)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(132)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(67)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Patton.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Patton.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Patton01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Patton02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Patton03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_15" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Patton01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Patton02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Patton03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_15" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_15" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Shakespeare</b><br>
+
+                <img src="resources/pic/memory/6s/Shakespeare.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Shakespeare.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Shakespeare.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Shakespeare01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Shakespeare02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Shakespeare03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_16" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Shakespeare01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Shakespeare02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Shakespeare03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_16" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_16" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div6s">
+
+                <b style="color: red;">Zu wen</b><br>
+
+                <img src="resources/pic/memory/6s/Zu_Wen.webp" style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">149</td>
+                            <td>(1491)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">13</td>
+                            <td>(134)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">22</td>
+                            <td>(223)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(64)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Zu_wen.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Zu_wen.4"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/6s/Zuwen01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Zuwen02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/6s/Zuwen03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_6s_17" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: 35%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Zuwen01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Zuwen02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/6s/Zuwen03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_6s_17" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_6s_17" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+    </div>
+
+    <div id="Memories5" class="tabcontent" style="margin-top: 1%;margin-left: 2%;margin-right: 2%;">
+
+        <fieldset class="fs5 flex">
+            <legend>5★ : List</legend>
+
+            <div class="div5s_small">
+
+                <b style="color: red;">Eiffu</b><br>
+
+                <img src="resources/pic/memory/5s/Eiffu.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">132</td>
+                            <td>(1184)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(107)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">20</td>
+                            <td>(181)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(54)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh2">
+                        <img src="resources/pic/memory/fullpic/5s/Eiffu01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Eiffu02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Eiffu03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_1" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000" style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Eiffu01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Eiffu02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Eiffu03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div5s_small">
+
+                <b style="color: red;">Ekko</b><br>
+
+                <img src="resources/pic/memory/5s/Ekko.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(109)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">20</td>
+                            <td>(181)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(51)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Ekko01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Ekko02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Ekko03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_2" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Ekko01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Ekko02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Ekko03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div5s_small">
+
+                <b style="color: red;">Erwin</b><br>
+
+                <img src="resources/pic/memory/5s/Erwin.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">132</td>
+                            <td>(1184)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(107)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">20</td>
+                            <td>(181)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(54)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Erwin01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Erwin02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Erwin03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_3" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Erwin01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Erwin02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Erwin03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Groda</b><br>
+
+                <img src="resources/pic/memory/5s/Groda.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">137</td>
+                            <td>(1232)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(107)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">19</td>
+                            <td>(177)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(53)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Groda01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Groda02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Groda03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_4" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Groda01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Groda02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Groda03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Lantern Gathering</b><br>
+
+                <img src="resources/pic/memory/5s/Lantern.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(109)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">19</td>
+                            <td>(177)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(53)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Lantern01.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_5" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Lantern01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_5" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_5" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Liv-Reindeer</b><br>
+
+                <img src="resources/pic/memory/5s/Liv-Reindeer.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(109)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">19</td>
+                            <td>(177)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(53)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Liv-Reindeer01.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_6" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Liv-Reindeer01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_6" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_6" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Mozart</b><br>
+
+                <img src="resources/pic/memory/5s/Mozart.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(109)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">19</td>
+                            <td>(177)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">5</td>
+                            <td>(53)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Mozart01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Mozart02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Mozart03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_7" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Mozart01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Mozart02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Mozart03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_7" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_7" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="div5s_small">
+
+                <b style="color: red;">New Year's Firework</b><br>
+
+                <img src="resources/pic/memory/5s/New_Year's_Firework.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(109)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">19</td>
+                            <td>(177)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(53)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/New_Years_Firework01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/New_Years_Firework02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/New_Years_Firework03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_8" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/New_Years_Firework01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/New_Years_Firework02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/New_Years_Firework03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_8" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_8" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Richelieu</b><br>
+
+                <img src="resources/pic/memory/5s/Richelieu.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(107)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">20</td>
+                            <td>(181)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">6</td>
+                            <td>(53)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Richelieu01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Richelieu02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Richelieu03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_9" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Richelieu01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Richelieu02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Richelieu03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_9" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_9" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Samanda</b><br>
+
+                <img src="resources/pic/memory/5s/Samanda.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">134</td>
+                            <td>(1208)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(107)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">20</td>
+                            <td>(185)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">5</td>
+                            <td>(51)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Samanda01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Samanda02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Samanda03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_10" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Samanda01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Samanda02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Samanda03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_10" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_10" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="div5s_small">
+
+                <b style="color: red;">Voltaire</b><br>
+
+                <img src="resources/pic/memory/5s/Voltaire.webp"
+                style="position: relative;float: right;margin-top: -5%;">
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>HP</b></td>
+                            <td style="text-align: center;">137</td>
+                            <td>(1232)</td>
+                        </tr>
+                        <tr>
+                            <td><b>ATK</b></td>
+                            <td style="text-align: center;">12</td>
+                            <td>(107)</td>
+                        </tr>
+                        <tr>
+                            <td><b>DEF</b></td>
+                            <td style="text-align: center;">20</td>
+                            <td>(181)</td>
+                        </tr>
+                        <tr>
+                            <td><b>CRI</b></td>
+                            <td style="text-align: center;">5</td>
+                            <td>(51)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="height: 140px">
+                    <a>
+                        <a_color><b>2 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                    <br>
+
+                    <a>
+                        <a_color><b>4 set Effect</b></a_color>
+                    </a><br>
+                    <a data-localize="Memories.6star.Da_vinci.2"></a>
+
+                </div>
+
+                <br>
+
+                <div id="show_pic2">
+                    <div class="flex remh">
+                        <img src="resources/pic/memory/fullpic/5s/Voltaire01.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Voltaire02.png" width="175" height="250" class="pic">
+                        <img src="resources/pic/memory/fullpic/5s/Voltaire03.png" width="175" height="250" class="pic">
+                    </div>
+
+                    <div class="mgl_text">
+                        <span class="margin18">[1/4]</span>
+                        <span class="margin22">[2/5]</span>
+                        <span class="margin24">[3/6]</span>
+                    </div>
+                </div>
+
+                <div id="cc_5s_11" class="carousel slide" data-ride="carousel" aria-hidden="true" data-interval="3000"
+                    style="margin-top: -10%;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Voltaire01.png" height="300"
+                                alt="First slide">
+                            <div style="text-align: center;margin-top: -20px;">[1/4]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Voltaire02.png" height="300"
+                                alt="Second slide">
+                            <div style="text-align: center;margin-top: -20px;">[2/5]</div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="resources/pic/memory/fullpic/5s/Voltaire03.png" height="300"
+                                alt="Third slide">
+                            <div style="text-align: center;margin-top: -20px;">[3/6]</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cc_5s_11" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cc_5s_11" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+    </div>
+
+    <div id="Weapon" class="tabcontent" style="margin-top: 1%;margin-left: 2%;margin-right: 2%;">
+
+        <br>
+
+        <fieldset style="margin-bottom: 5px;width: 96vw;" id="pc_weapon_cp">
+            <legend>Control Panel</legend>
+
+            <div style="margin: auto;" id="div_weapon_cp">
+                <input id="Bows" type="checkbox" style="margin-left: 10px;" checked><label for="Bows" data-localize="Weapon.Control.Bows"></label>
+                <input id="Chainsaws" type="checkbox" style="margin-left: 5px;"><label for="Chainsaws" data-localize="Weapon.Control.Chainsaws"></label>
+                <input id="Compositor_Greatswords" type="checkbox" style="margin-left: 5px;"><label for="Compositor_Greatswords" data-localize="Weapon.Control.Compositor_Greatswords"></label>
+                <input id="Drone_Cannons" type="checkbox" style="margin-left: 5px;"><label for="Drone_Cannons" data-localize="Weapon.Control.Drone_Cannons"></label>
+                <input id="Greatswords" type="checkbox" style="margin-left: 5px;"><label for="Greatswords" data-localize="Weapon.Control.Greatswords"></label>
+                <input id="Handguns" type="checkbox" style="margin-left: 5px;"><label for="Handguns" data-localize="Weapon.Control.Handguns"></label>
+                <input id="Handheld_Cannons" type="checkbox" style="margin-left: 5px;"><label for="Handheld_Cannons" data-localize="Weapon.Control.Handheld_Cannons"></label>
+                <input id="Kukris" type="checkbox" style="margin-left: 5px;"><label for="Kukris" data-localize="Weapon.Control.Kukris"></label>
+                <input id="Scythe" type="checkbox" style="margin-left: 5px;"><label for="Scythe" data-localize="Weapon.Control.Scythes"></label>
+                <input id="Spear" type="checkbox" style="margin-left: 5px;"><label for="Spear" data-localize="Weapon.Control.Spears"></label>
+                <input id="Swords" type="checkbox" style="margin-left: 5px;"><label for="Swords" data-localize="Weapon.Control.Swords"></label>
+            </div>
+
+        </fieldset>
         
-      </div>
+        <fieldset style="margin-top: -20px;width: 96vw;" id="mobile_weapon_cp">
+            <legend>Control Panel</legend>
+
+            <div class="flex" style="margin: auto;">
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox1" value="Bows"><label for="checkbox1">BOW</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox2" value="Chainsaws"><label for="checkbox2">CNS</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox3" value="Compositor_Greatswords"><label for="checkbox3">CGS</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox4" value="Drone_Cannons"><label for="checkbox4">DCN</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox5" value="Greatswords"><label for="checkbox5">GWS</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox6" value="Handguns"><label for="checkbox6">HDG</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox7" value="Handheld_Cannons"><label for="checkbox7">HCN</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox8" value="Kukris"><label for="checkbox8">KUK</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox9" value="Scythe"><label for="checkbox9">SCY</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox11" value="Spears"><label for="checkbox11">SPR</label></li>
+                <li style="margin-left: 5px;"><input type="checkbox" id="checkbox10" value="Swords"><label for="checkbox10">SWD</label></li>
+            </div>
+
+        </fieldset>
+
+        <div id="div_bows" style="text-align: justify;">
+        </div>
+
+        <div id="div_chainsaws" style="text-align: justify;">
+        </div>
+
+        <div id="div_compositor_greatswords" style="text-align: justify;">
+        </div>
+
+        <div id="div_drone_cannons" style="text-align: justify;">
+        </div>
+
+        <div id="div_greatswords" style="text-align: justify;">
+        </div>
+
+        <div id="div_handguns" style="text-align: justify;">
+        </div>
+
+        <div id="div_handheld_cannons" style="text-align: justify;">
+        </div>
+
+        <div id="div_kukris" style="text-align: justify;">
+        </div>
+        
+        <div id="div_scythe" style="text-align: justify;">
+        </div>
+
+        <div id="div_spear" style="text-align: justify;">
+        </div>
+
+        <div id="div_swords" style="text-align: justify;">
+        </div>
+
     </div>
-  </header>
 
-
-    <main class="pb7" role="main">
-      
-
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
     
-  </article>
-  
-  
-  
-  
-  
-  
-  
+    <!-- Modal -->
+    <div class="modal fade" id="credit_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="dark_modal">
+                <div style="margin-left: 2%;margin-top: 2%;">
+                    <fieldset style="padding-bottom: 15px;" class="fs_log">
+                        <legend>Update Log :</legend>
 
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
-    &copy;  My New Hugo Site 2021 
-  </a>
-    <div>
+                        <div class="row">
 
+                            <div style="margin-left: 35px;">
+                                01/29/21 --> Adding Multi language
+                                <br><br>                               
+                            </div>
 
+                            <div style="margin-left: 35px;">
+                                <b>Credit :</b> <br>
+                                Data [Translate/Icon] Credit : PGR FANDOM maintainer <br>
+                                Picture [PGR Asset] &nbsp;&nbsp;&nbsp;&nbsp;Credit : <a href="https://discord.gg/JErpUEk">Ascendants Discord</a><br>
+                                This site maintainer : <b> Aqualia#5733 </b><br>
+                                Vietnam Language : <a href="https://github.com/hungofhydra">hungofhydra</a><br><br>
+                            </div>
 
+                            <div style="margin-left: 35px;">
+                                <b>Main Repo : <a href="https://github.com/CosmicTraveler/CosmicTraveler.github.io">HERE</a>
+                                    </b> <br>
+                                
+                            </div>
 
+                        </div>
+                    </fieldset>
+                </div>
+                <div style="text-align: center;padding-bottom: 2%;">
+                    <br>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</body>
 
-
-
-
-
-
-
-
-
-</div>
-  </div>
-</footer>
-
-  </body>
 </html>
+
+<script>
+
+    $("[data-localize]").localize("language")
+    $("[data-localize]").localize("language", { language: "en" })
+
+    $('#EN').click(function () {
+        document.getElementById("body").style.fontFamily = "IPGA";
+        $("[data-localize]").localize("language")
+        $("[data-localize]").localize("language", { language: "en" })
+    });
+
+    $('#VN').click(function () {
+        document.getElementById("body").style.fontFamily = "Times New Roman";
+        $("[data-localize]").localize("language")
+        $("[data-localize]").localize("language", { language: "vn" })
+    });
+
+    //using a string will skip ONLY if the language code matches exactly
+    //this would prevent loading only if the language was "en-US"
+    $("[data-localize]").localize("language", { skipLanguage: "en-US" })
+
+    //using a regex will skip if the regex matches
+    //this would prevent loading of any english language translations
+    $("[data-localize]").localize("language", { skipLanguage: /^en/ })
+
+    //using an array of strings will skip if any of the strings matches exactly
+    $("[data-localize]").localize("language", { skipLanguage: ["en", "en-US"] })
+
+    function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = "#636664";
+        elmnt.style.color = "#ffffff";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    // Weapon Control panel
+    $('#Bows').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_bows').load('resources/html/weapon/bows.html');
+        } else {
+            $('#div_bows').html("");
+        }
+    });
+
+    $('#checkbox1').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_bows').load('resources/html/weapon/bows.html');
+        } else {
+            $('#div_bows').html("");
+        }
+    });
+
+    $('#Chainsaws').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_chainsaws').load('resources/html/weapon/chainsaws.html');
+        } else {
+            $('#div_chainsaws').html("");
+        }
+    });
+
+    $('#checkbox2').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_chainsaws').load('resources/html/weapon/chainsaws.html');
+        } else {
+            $('#div_chainsaws').html("");
+        }
+    });
+
+    $('#Compositor_Greatswords').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_compositor_greatswords').load('resources/html/weapon/compositor_greatswords.html');
+        } else {
+            $('#div_compositor_greatswords').html("");
+        }
+    });
+
+    $('#checkbox3').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_compositor_greatswords').load('resources/html/weapon/compositor_greatswords.html');
+        } else {
+            $('#div_compositor_greatswords').html("");
+        }
+    });
+
+    $('#Drone_Cannons').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_drone_cannons').load('resources/html/weapon/drone_cannons.html');
+        } else {
+            $('#div_drone_cannons').html("");
+        }
+    });
+
+    $('#checkbox4').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_drone_cannons').load('resources/html/weapon/drone_cannons.html');
+        } else {
+            $('#div_drone_cannons').html("");
+        }
+    });
+
+    $('#Greatswords').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_greatswords').load('resources/html/weapon/greatswords.html');
+        } else {
+            $('#div_greatswords').html("");
+        }
+    });
+
+    $('#checkbox5').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_greatswords').load('resources/html/weapon/greatswords.html');
+        } else {
+            $('#div_greatswords').html("");
+        }
+    });
+
+    $('#Handguns').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_handguns').load('resources/html/weapon/handguns.html');
+        } else {
+            $('#div_handguns').html("");
+        }
+    });
+
+    $('#checkbox6').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_handguns').load('resources/html/weapon/handguns.html');
+        } else {
+            $('#div_handguns').html("");
+        }
+    });
+
+    $('#Handheld_Cannons').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_handheld_cannons').load('resources/html/weapon/handheld_cannons.html');
+        } else {
+            $('#div_handheld_cannons').html("");
+        }
+    });
+
+    $('#checkbox7').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_handheld_cannons').load('resources/html/weapon/handheld_cannons.html');
+        } else {
+            $('#div_handheld_cannons').html("");
+        }
+    });
+
+    $('#Kukris').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_kukris').load('resources/html/weapon/kukris.html');
+        } else {
+            $('#div_kukris').html("");
+        }
+    });
+
+    $('#checkbox8').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_kukris').load('resources/html/weapon/kukris.html');
+        } else {
+            $('#div_kukris').html("");
+        }
+    });
+
+    $('#Scythe').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_scythe').load('resources/html/weapon/scythes.html');
+        } else {
+            $('#div_scythe').html("");
+        }
+    });
+
+    $('#checkbox9').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_scythe').load('resources/html/weapon/scythes.html');
+        } else {
+            $('#div_scythe').html("");
+        }
+    });
+
+    $('#Swords').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_swords').load('resources/html/weapon/swords.html');
+        } else {
+            $('#div_swords').html("");
+        }
+    });
+
+    $('#checkbox10').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_swords').load('resources/html/weapon/swords.html');
+        } else {
+            $('#div_swords').html("");
+        }
+    });
+
+    $('#Spear').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_kukris').load('resources/html/weapon/spear.html');
+        } else {
+            $('#div_kukris').html("");
+        }
+    });
+    
+    $('#checkbox11').click(function () {
+        if ($(this).is(':checked')) {
+            $('#div_spear').load('resources/html/weapon/spear.html');
+        } else {
+            $('#div_spear').html("");
+        }
+    });
+
+    $(document).ready(function(){
+        // Show modal on page load
+        $("#credit_modal").modal('show');
+
+        // Hide modal on button click
+        $(".hide-modal").click(function(){
+            $("#credit_modal").modal('hide');
+        });
+    });
+</script>

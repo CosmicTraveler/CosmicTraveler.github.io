@@ -1,0 +1,227 @@
+{
+  "BC": {
+    "Day": "Day",
+    "Week": "Week",
+    "Month": "Month",
+    "Total": "Total",
+    "Daily": "Daily mission",
+    "Weekly": "Weekly mission"
+  },
+  "Daily": {
+    "Board": "Daily Mission",
+    "Mission": {
+      "1": "                    <b>Standard</b> <br>                    • Daily first Login <br>                    • Clear any battle 1/2/3/5 time(s) <br>                    • Clear any coop once <br>                    • Purchase any item in the shop <br>                    <a style='color: red;'> • Exchange black cards for stamina once </a><br>                    • Consume 100 stamina <br>                    • Consume 200 stamina <br>                    • Consume 300 stamina <br>                    • Talk to your Character in the home page once <br>                    • Visit dorm once <br>                    • Clear Pain Cage 3 times <br>                    • Clear War Zone 3 times <br>",
+      "2": "                    <b>Dorm</b> <br>                    • Complete all dormitory tasks <br>                    • Place a unit on dorm duty <br>                    • Trigger and complete dormitory events 3 times <br>                    • Pet units 3 times <br>                    • Make furniture 3 times <br>"
+    }
+  },
+  "Weekly": {
+    "Board": "Weekly Mission",
+    "Mission": {
+      "1": "                    <b>Warzone</b> <br>                    • Clear Warzone 1/2/3/4/5/6/7/8/9/10/11/12 time(s) <br>                    • Get 100,000/200,000 total points in Warzone <br>",
+      "2": "                    <b>Pain Cage</b> <br>                    • Clear Pain Cage 1/2/3/4/5/6/7/8/9/10 time(s) <br>                    • Get 200,000/400,000 total points in Pain Cage <br>"
+    }
+  },
+  "Memories": {
+    "6star": {
+      "Adolf" : {
+        "2" : "Gain 20% more energy when consuming orbs. Ultimate takes 20% less energy to activate.",
+        "4" : "Increases all damage by 15% for 10s, decreases damage taken by 20%, and super armor after ultimate is over."
+      },
+      "Anjun" : {
+        "2" : "5% additional damage increase to normal attacks. 7% physical damage increase.",
+        "4" : "Blue orb's anti-CC buff lasts for an additional 2 seconds. Gain 15% physical damage when the buff is present.",
+        "6" : "Gain 24 energy when you enter Condensed Will state. Gain 3 color orbs, one of each after releasing ultimate."
+      },
+      "Basilone" : {
+        "2" : "3% increase to all attacks, 7% increase to dark damage.",
+        "4" : "When dealing damage, there is a 20% chance to summona phantom area for 5 seconds. Afterwards, the phantom area goes on a 5 seconds cooldown.Enemies standing within the phantom area areinflicted with corrosion for seconds. Enemiesafflicted with corrosion take 80% dark damageevery 2 seconds and have reduced dark resistance.When attacking enemies with corrosion thereis a 20% chance to gain 1 random orb. This effect has a <b>12 seconds CD</b>"
+      },
+      "Condelina" : {
+        "2" : "Increase basic attack's damage by 15%.",
+        "4" : "Basic attacks has a 25% chance to trigger Berserk Mode.During Berserk Mode, Increase basic attack damage by 15% and critical chance by 5%. Lasts for 5s, <b>CD: 8s</b>"
+      },
+      "Darwin" : {
+        "2" : "Increase all damage by 3% for every orb consumed, lasts for 4s, up to 5 stacks.",
+        "4" : "When consuming an orb, the orb's corresponding color is stored. When 3 colors are collected, release a 12m radius shockwave with the character as the center that deals 600% physical damage."
+      },
+      "Da_vinci" : {
+        "2" : "When QTE is triggered, the player-controlled character's will gain 10% attack and 20% defense for 8s.",
+        "4" : "When QTE is triggered through a 3 orb consumption, trigger another character's QTE, CD: 8s. When all characters are on the field at once, increase attack by 20%."
+      },
+      "Einstein" : {
+        "2" : "QTE/3 orb skills decreases target's element resistance by 15% for 8 seconds, (Meaning: if afire attack hits the target, it decreases fire resistance, if lightning, it decreaseslightning resistance. Physical does not work with this memory) <br><b>CD: 15s</b>",
+        "4" : "When damaged, open an elemental ring and increase your elemental resistance by 5% + 1% of your current element resistance for 5s. The ring grants an increase of element damage by 15%, <b>CD : 8s</b>"
+      },
+      "Ferret_II" : {
+        "2" : "Increase healing effectiveness by 10%. Heals increase the target's physical damage and defense by 10% for 5s, <b>CD: 8s</b>",
+        "4" : "Everytime you cast a healing skill, drone receives one charge. When the drone is fully charged, the next heal will summon a healing drone. The drone will automatically follow the character with the least amout of health on the field, healing 2% of the character's maximum health every second in a 5m radius. The area will also increase physical damage by 15% for 5s. One drone can be deployed every 12s"
+      },
+      "Flamel" : {
+        "2" : "5% dark damage and attack increase.",
+        "4" : "After entering Annihilation mode, increase dark damage and ultimate damage by 30%. Gain 10 energy after consuming an Annihilation Orb."
+      },
+      "Frederick" : {
+        "2" : "Dodging increases movement speed by 15% and all damage by 5%, up to 3 stacks.",
+        "4" : "Dodging decreases the attacker's speed by 20% and receives more damage by 15%, lasts for 4s, <b>CD: 8s</b>"
+      },
+      "Guinea" : {
+        "2" : "Increase healing effectiveness by 10%. Heals increases target's elemental damage and resistance by 10% for 5s.",
+        "4" : "Everytime you cast a heal skill, drone receives one charge. When the drone is fully charged, the next heal will summon an elemental drone. The drone will automatically follow the lowest health character on the field healing 2% of the character's maximum health every second in a 5m radius. The area will also increase elemental damage by 15% for 5s. One drone can be deployed every 12s."
+      },
+      "Hannah" : {
+        "2" : "3 orb skills deal 25% more damage.",
+        "4" : "Every 30s, the next 3 orb skill will trigger slowmo. Character will gain 1 random orb."
+      },
+      "Heisen" : {
+        "2" : "Increase all damage by 3% and lightning damage by 7%.",
+        "4" : "Each attack has a 25% chance of triggering a 3.5m radius lightning explosion. The explosion deals 100% damage and inflict Electrify for 5s to enemies caught in it, <b>CD: 5s.</b> Electrify decreases enemy's lightning resistance by 8%. Attacking Electrified enemies have a 20% chance of triggering Lightning Chain that causes 250% to all enemies inflicted with Electrify."
+      },
+      "Katherine" : {
+        "2" : "QTE/3 orb skills will decrease the target's physical defense by 20% for 7 seconds, <b>CD: 10s</b>.",
+        "4" : "When damaged, gain a shield equal to 20% of your defense, blocks the current attack, and gain a 15% increase to physical damage for 5s, <b>CD: 8s</b>."
+      },
+      "koya" : {
+        "2" : "10% additional damage increase.",
+        "4" : "Gain 20% ultimate energy for every entrance to stage. Skill orbs deal 10% more damage.",
+        "6" : "When Camu is in Berserker mode, gain 10% additional damage and 20% movement speed. Skill orbs will now inflict Terror. The Terror effect lasts until Berserker mode is over. Terror: decrease target's attack by 10% and deal 10% additional damage to the target."
+      },
+      "Lee_uwen_hoek" : {
+        "2" : "3% attack increase, 7% physical damage increase.",
+        "4" : "20% increase to the effect of Spear of Insight. Deal 5% more damage to target's that has been inflicted with Spear of Insight."
+      },
+      "Patton" : {
+        "2" : "Increase critical chance and physical damage by 5%.",
+        "4" : "For every non-critical attack dealt, the next physical attack's critical chance increases by 2%, stackable up to 20%. Critical chance is reset once a critical attack has landed. Physical damage is increased by 5% whenever you land a critical strike for 3s, stackable up to 3 times."
+      },
+      "Shakespeare" : {
+        "2" : "Increase all damage by 3% and fire damage by 7%.",
+        "4" : "Each attack has a 50% chance to inflict Burn to the enemy for 8s. Attacking Burned enemies has a 20% chance to trigger an explosion, dealing 100% fire damage. Burned enemies have -8% fire resistance and take 12% fire damage every second. Stackable up to 3 times. Burn duration resets after each stack."
+      },
+      "Zu_wen" : {
+        "2" : "ATK increased by 3%, Ice damage increased by 7%.",
+        "4" : "When attacking, there is a 30% chance of causing a Frost state for 5 seconds. When attacking a Frost target, there is a 20% chance of triggering an ice burst, causing 420% Ice and applying Frost effect to the target within a radius of 3 meters. Cooldown 8 seconds. Frost: Reduce the target's movement speed by 20% and reduce the resistance to Ice damage by 8%."
+      }
+    },
+    "5star": {
+      "Eiffu" : {
+        "2" : "Increase all damage by 2% for every orb consumed, lasts for 3s. 5 stacks max, with each stack resetting the buff's duration.",
+        "4" : "Every 60s, the next 3 orb skill will trigger slowmo."
+      },
+      "Ekko" : {
+        "2" : "Increase all damage by 2% and elemental damage 4%.",
+        "4" : "There's a 15% chance to Burn, Shock, Freeze, and Corrode(depending on the element). Lasts for 5s with a cooldown of 8s on each enemy."
+      },
+      "Erwin" : {
+        "2" : "Increase basic attack's damage by 10%.",
+        "4" : "Increase basic attack's damage by 15%. Buff disappears when attacked, returns after 12s."
+      },
+      "Groda" : {
+        "2" : "Attacks decrease enemy's resistance by 6% for 5s, <b>CD: 12s</b>.",
+        "4" : "Enemies within 5m has 6% lower elemental resistance when you are attacked, lasts for 7s. Triggering again will reset the effect."
+      },
+      "Lantern_Gathering" : {
+        "2" : "After using a 3 orb combo or QTE, summon a lantern that follows all allies on the field for 15 seconds. The lantern buffs nearby allies, increasing their attack and movement speed by 7%. This effect has a 30 seconds cooldown."
+      },
+      "Liv-Reindeer" : {
+        "2" : "Increase orbs' damage and healing effectiveness by 5%.",
+        "4" : "There's a 20% chance of dropping a christmas present near an enemy when attacking. Picking up the box will recover 5 energy and increase all damage by 5%, <b>CD: 10s</b>."
+      },
+      "Mozart" : {
+        "2" : "Increase all damage by 15% when in slowmo.",
+        "4" : "Deal 200% damage to all enemies on screen when slowmo is triggered."
+      },
+      "New_Year's_Firework" : {
+        "2" : "Attack increases by 5%. After consuming 3 red orbs, summon 4 red packets in a ring shape. The red packets will deal 10% fire damage when they come in contact with the enemy, lasts for 10 seconds, 30 seconds cooldown."
+      },
+      "Richelieu" : {
+        "2" : "Increase healing effectiveness by 5%. Heals increase target's physical damage by 8% for 4s, <b>CD: 5s</b>.",
+        "4" : "Gain a random orb for every 8 orbs consumed, <b>CD: 5s</b>."
+      },
+      "Samanda" : {
+        "2" : "Increase healing effectiveness by 5%. Heals increase target's elemental damage by 8% for 4s, <b>CD: 5s</b>.",
+        "4" : "Heals will leave an elemental ring. Increase elemental damage by 8% and elemental resistance by 5%, <b>CD: 10s</b>."
+      },
+      "Voltaire" : {
+        "2" : "Attacks decrease enemy's defense by 10% for 5s, <b>CD: 12s</b>.",
+        "4" : "Decrease target's physical defense by 15% when attacked, lasts for 7s. Stackable up to 2 times"
+      }
+    }
+  },
+  "Weapon": {
+    "Control": {
+      "Bows"                    : "&nbsp; Bows",
+      "Chainsaws"               : "&nbsp; Chainsaws",
+      "Compositor_Greatswords"  : "&nbsp; Compositor Greatswords",
+      "Drone_Cannons"           : "&nbsp; Drone Cannons",
+      "Greatswords"             : "&nbsp; Greatswords",
+      "Handguns"                : "&nbsp; Handguns",
+      "Handheld_Cannons"        : "&nbsp; Handheld Cannons",
+      "Kukris"                  : "&nbsp; Kukris",
+      "Scythes"                 : "&nbsp; Scythes",
+      "Spears"                  : "&nbsp; Spears",
+      "Swords"                  : "&nbsp; Swords"
+    },
+    "Bows" : {
+      "Lightning"               : "15% Lightning damage increase. Trigger a Lightning strike after dealing lightning damage using skills 5 times on a single target, dealing 150% Lightning damage, 2 seconds cooldown.",
+      "Ramiel"                  : "15% Increase to ultimate damage. Increase physical damage received by enemies by 2% everytime your ultimate hits them for 5 seconds, stacks up to 8 times.",
+      "Saker_E-3320"            : "Critical chance and critical damage increases by 10% when there are no enemies within 2 meters."
+    },
+    "Chainsaws" : {
+      "Chimera-Break"           : "20% Chance to cause target to enter damaged status when attacking, dealing 2% of Physical damage every second for 3 seconds, stacks up to 10 times, chances are double on enemies with defense down. 10% Increase to Physical damage when attacking damaged enemies.",
+      "Verve"                   : "10% chance to decrease enemy's Fire resistance by 5% when attacking, 8 seconds cooldown for each enemy. Fire damage increased by 20% after ultimate and doubles the chance of decreasing enemy's Fire resistance.",
+      "Tourmaline_Fire"         : "30% Chance to cause defense break while attacking, decrease defense by 5% for 3 seconds, Stacks up to 5 times."
+    },
+    "Compositor_Greatswords" : {
+      "Thanatos"                : "Increases All damage by 15%. When Camu - Berserker is in the state of madness, Thanatos continues to increase the Dark damage by 10%.",
+      "Glimpse"                 : "After 3 orbs, all damage is increased by 12% for 4 seconds.",
+      "Light_Eater"             : "Normal attack damage increased by 10%."
+    },
+    "Drone_Cannons" : {
+      "Sky_Wind_Dragon"         : "Basic attacks have a 10% chance to weaken enemies, decreasing their damage by 10% for 5 Seconds. 10% Chance to recover an orb when attacking weakened enemies, Cooldown for 6 Seconds.",
+      "God_Giver"               : "10% Damage increase to allies within 5 meters of range for every 12 orbs you consume. Deal 10% more damage to rooted enemies.",
+      "Type_Zero"               : "Damage of Eclipse's red orb is increased by 50%. Increase damage by 15% after using a 3 orb skill for 5 seconds.",
+      "Guardian_Mount"          : "Obtain a random orb for increasing your combo by 30, Cooldown for 8 seconds."
+    },
+    "Greatswords" : {
+      "Big_Kamui"               : "Increase Physical damage by 15%. Next skill damage is increased by 30% when you successfully counter an enemy.",
+      "Pitch_Black"             : "20% increase to physical damage and dark damage by 20% after consuming 3 orbs, lasts for 5 seonds.",
+      "Star_Of_Bethlehem"       : "Create a Christmas halo when you do a 3 orb combo. Attack and movement speed is increased by 8% within the halo. The halo lasts for 15 seconds, Cooldown for 30 seconds.",
+      "Accel_Greatsword"        : "Attacks have a 10% chance to release a Shockwave, dealing 100% Physical damage to enemies within range."
+    },
+    "Handguns" : {
+      "Dominator"               : "All damage increases by 3% for every energy orb you pick up, Stacks up to 5 times. After picking up 5 orbs, Gain 1 extra skill orb and 10 energy. Cooldown for 10 Seconds.",
+      "Wolf_Eater"              : "All damage increase by 20% when attacking enemies within the burning area.",
+      "Zero-Degree_Target"      : "Matrix's core passive deals 10% more damage. Increase Physical damage by 15% after a 3 orb skill for 5 seconds.",
+      "Shadow_Violet"           : "After consecutive Red, Blue, and Yellow orb consumption for 5 seconds, Increase all damage by 15% for 5 seconds."
+    },
+    "Handheld_Cannons" : {
+      "Frenzy_Fusion_Cannon"   : "Increase Physical damage by 10%. After consuming 3 orbs at once, basic attacks damage is increased by 30%.",
+      "Nuclear_Dragon"         : "Increase Fire damage by 10%. When consuming a red orb, Fire damage increases by 10% for 5 seconds.",
+      "Pillar_of_Lava"         : "Damage is increased by 12% after consuming 3 orbs at once for 4 seconds.",
+      "Red_Firework"           : "Create explosions at target's location when dealing damage in Canon mode or Fire mode, dealing a total of 250% of physical damage, 10 seconds cooldown."
+    },
+    "Kukris" : {
+      "Soul_Slayer"            : "When you deal a critical from behind, the target will be damaged, receiving 50% physical damage every second for 3 seconds. When attacking damaged enemies, physical damage increases by 20%.",
+      "Suzume"                 : "All damage is increased by 10%. When in Resonance form, increase Dark damage by 10%.",
+      "Heartstone"             : "After consecutive 3 orb combo, 15% increase to all damage for 5 seconds.",
+      "Lantern_Night"          : "When dealing damage to an enemy, 20% chance to drop a lantern that deals 15% Physical damage. 1 second cooldown."
+    },
+    "Scythes" : {
+      "Saint_Elmo"             : "10% more Lightning damage. When in Flash mode, decrease the amount of normal attacks required to trigger core passive by 2.",
+      "Violet_Wu"              : "When dealing damage to shielded enemies, increase all damage by 2%, stacks 3 times and lasts for 5 seconds. When you break an enemy's shield, stun the target for 2 seconds. This effect has a 10 seconds cooldown on each affected enemy. After releasing Colorflow's core passive, Increase all physical damage done by 15%. Lasts for 7 seconds.",
+      "Faded"                  : "All damage increases by 10% for 4 seconds after releasing QTE or 3 orbs."
+    },
+    "Spears" : {
+      "Gungnir"                : "When dealing damage, decrease target's physical defense by 20%, lasts for 8 seconds, triggering the effect again will refresh the duration. When dealing damage with a small/medium/wide type railgun shot, target receives 25/50/100% physical damage based on your attack damage for 8s."
+    },
+    "Swords" : {
+      "Julia"                  : "Increase 15% Ice Damage. Increase 10% all damage after a 3 orb combo, last for 5 seconds.",
+      "Kageuchi-Break"         : "Every time Lightning damage is dealt, increase Lightning damage by 5%, last for 4 seconds, tacks up to 4 times, triggering it again will refresh the duration. Gain 10% extra damage after releasing ultimate, last for 10 seconds, triggering it again will refresh the duration.",
+      "Red_Lotus_Fanatic"      : "10% Damage increase to normal attacks. Every normal attack increases physical damage by 5% for 2 seconds, stack up to 5 times.",
+      "Red_Sakura"             : "Gain 20% more energy when consuming orbs. Ultimate takes 20% less energy to activate.",
+      "Sariel"                 : "Dark damage increased by 15%. When attacking, there is a 15% chance of releasing a shadow impact, causing 75% ATK of Dark damage, and and enter cooldown for 0.5s.",
+      "Sirius"                 : "Increase all damage by 5%. When using skill orbs, accumulate energy based on the number of skill orbs usage. At 50 energy, summon Sirius for 45 seconds. Cooldown for 60 seconds.",
+      "Kuji_no_Ken"            : "Attacks have a 20% chance of causing Lightning Strike, dealing 50% ATK of Physical damage. Cooldown for 3 seconds."
+    }
+  }
+}

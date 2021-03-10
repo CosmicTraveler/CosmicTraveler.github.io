@@ -1,0 +1,789 @@
+@font-face {
+    font-family: "IPGA";
+    src: url('ipaexg.ttf') format('truetype');
+}
+
+body {
+    line-height: 1.2;
+    font-family: 'IPGA';
+    background-color: white;
+}
+
+nav {
+    width: 100vw;
+    height: 6vh;
+}
+
+a_color {
+    color: rgb(0, 60, 255);
+}
+
+a_color2 {
+    color: rgb(255, 0, 0);
+}
+
+.div_center {
+    margin-left: 17%;
+    margin-top: 2%;
+}
+
+.example_c {
+    color: #494949 !important;
+    text-decoration: none;
+    background: #ffffff;
+    overflow:hidden;
+    width: 3em;
+    height: 30px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+.example_c:hover {
+    color: #ffffff !important;
+    padding-right: 105px;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.6s ease 0s;
+}
+
+.example_c:hover span {
+    color: #ffffff !important;
+    padding-right: 35px;
+    transition: all 0.6s ease 0s;
+}
+
+.fs {
+    width: 430px;
+    padding-bottom: 3px;
+    margin-right: 1%;
+}
+
+.fs2 {
+    width: 430px;
+    height: 180px;
+    padding-bottom: 3px;
+    margin-right: 1%;
+}
+
+.fs3 {
+    width: 870px;
+    height: 300px;
+    padding-bottom: 3px;
+    margin-right: 1%;
+}
+
+.fs4 {
+    width: 96vw;
+    height: 5400px;
+    padding-bottom: 3px;
+    margin-right: 1%;
+}
+
+.fs5 {
+    width: 96vw;
+    height: 2900px;
+    padding-bottom: 3px;
+    margin-right: 1%;
+}
+
+.fs_weapon {
+    width: 96vw;
+    padding-bottom: 5px;
+    margin-right: 1%;
+}
+
+fieldset {
+    border: solid 1px black;
+    display: flex;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+legend {
+    font-size: 18px;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_buttom {
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(0, 162, 255);
+    z-index: 1;
+}
+
+.nav_lang {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(0, 162, 255);
+    z-index: 1;
+}
+
+.div6s {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 630px;
+    height: 530px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ad1400;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.div6s_small {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 630px;
+    height: 530px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ad1400;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.div5s_small {
+    border-style: groove;
+    border-color: rgba(35, 148, 223, 0.733);
+    width: 630px;
+    height: 470px;
+    margin-left: 1%;
+    background-color: #bebebe41;
+    border-left: solid 8px #ff9900;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.pic {
+    width: 175;
+    height: 250;
+}
+
+.margin18 {
+    margin-left: 17%;
+}
+
+.margin22 {
+    margin-left: 22%;
+}
+
+.margin24 {
+    margin-left: 23%;
+}
+
+.remh {
+    margin-left: 5%;
+    height: 220px;
+}
+
+.remh2 {
+    margin-left: 5%;
+    height: 220px;
+}
+
+#show_pic {
+    display: block;
+    visibility: visible;
+}
+
+#show_pic2 {
+    margin-top: -55px;
+    display: block;
+    visibility: visible;
+}
+
+#cc_6s_1 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_2 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_3 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_4 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_5 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_6 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_7 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_8 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_9 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_10 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_11 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_12 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_13 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_14 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_15 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_16 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_17 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_18 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_6s_19 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_1 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_2 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_3 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_4 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_5 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_6 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_7 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_8 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_9 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_10 {
+    display: none;
+    visibility: hidden;
+}
+
+#cc_5s_11 {
+    display: none;
+    visibility: hidden;
+}
+
+.div_weapon6 {
+    border-style: groove;
+    border-color: rgba(158, 158, 158, 0.575);
+    width: 630px;
+    height: 460px;
+    margin-left: 1%;
+    background-color: #aaf9ff41;
+    border-left: solid 8px #ad1400;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.div_weapon5 {
+    border-style: groove;
+    border-color: rgba(158, 158, 158, 0.575);
+    width: 630px;
+    height: 460px;
+    margin-left: 1%;
+    background-color: #aaf9ff41;
+    border-left: solid 8px #ff9900;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.div_weapon4 {
+    border-style: groove;
+    border-color: rgba(158, 158, 158, 0.575);
+    width: 630px;
+    height: 460px;
+    margin-left: 1%;
+    background-color: #aaf9ff41;
+    border-left: solid 8px #ea08ff;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+#height_weapon {
+    height: 100px;
+}
+
+#pc_weapon_cp {
+    display: block;
+    visibility: visible;
+}
+
+#mobile_weapon_cp {
+    display: none;
+    visibility: hidden;
+}
+
+li {
+    list-style:none;
+}
+
+li label{
+    width: 70px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    border-radius: 6px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    transition: all .2s;
+}
+
+li .label_c{
+    width: 90px;
+    margin: 3px 0px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: all .2s;
+}
+
+li label {
+    padding: 1px 4px;
+    cursor: pointer;
+}
+
+li label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+li input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+li input[type="checkbox"]:checked + label {
+    border: 2px solid #0400ff;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: all .2s;
+}
+
+li input[type="checkbox"] {
+  display: absolute;
+}
+
+li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.fs_log {
+    width: 35vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* 6S zone -------------------------------------------------*/
+
+    #show_pic {
+        display: none;
+        visibility: hidden;
+    }
+
+    #cc_6s_1 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_2 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_3 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_4 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_5 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_6 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_7 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_8 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_9 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_10 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_11 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_12 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_13 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_14 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_15 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_16 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_17 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_18 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_6s_19 {
+        display: block;
+        visibility: visible;
+    }
+
+    .div6s {
+        height: 46rem;
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+
+    .div6s_small {
+        height: 38rem;
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+
+    .remh {
+        position: relative;
+        padding-top: 110px;
+        height: 220px;
+    }
+
+    img.pic { 
+        width: 85px;
+        height: 120px; 
+    }
+
+    .mgl_text {
+        margin-left: 0;
+        padding-top: -110px;
+    }
+
+    .margin18 {
+        margin-left: 13%;
+    }
+    
+    .margin22 {
+        margin-left: 18%;
+    }
+    
+    .margin24 {
+        margin-left: 18%;
+    }
+
+    .fs4 {
+        width: 96vw;
+        height: 11620px;
+        padding-bottom: 3px;
+    }
+
+    .div_center {
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+
+    .fs {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 96vw;
+        margin-bottom: 1vh;
+        padding-bottom: 5px;
+    }
+
+    .fs3 {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 96vw;
+        height: 55vh;
+        margin-bottom: 1vh;
+        padding-bottom: 15px;
+    }
+
+    .mgl1 {
+        margin-left: 2%;
+    }
+
+    .mgl2 {
+        margin-left: 2%;
+        margin-bottom: 2vh;
+    }
+
+    /*----------------------------------------------------------*/
+    
+    /* 5S zone -------------------------------------------------*/
+    
+    #show_pic2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .fs5 {
+        width: 96vw;
+        height: 6270px;
+        padding-bottom: 3px;
+    }
+
+    .div5s_small {
+        height: 35rem;
+        margin-left: 5px;
+        margin-right: -10px;
+    }
+
+    #cc_5s_1 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_2 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_3 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_4 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_5 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_6 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_7 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_8 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_9 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_10 {
+        display: block;
+        visibility: visible;
+    }
+
+    #cc_5s_11 {
+        display: block;
+        visibility: visible;
+    }
+    
+    /*----------------------------------------------------------*/
+    
+    /* Weapon zone ---------------------------------------------*/
+    
+    .div_weapon6 {
+        border-style: groove;
+        border-color: rgba(158, 158, 158, 0.575);
+        width: 630px;
+        height: 550px;
+        margin-left: 1%;
+        background-color: #aaf9ff41;
+        border-left: solid 8px #ad1400;
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .div_weapon5 {
+        border-style: groove;
+        border-color: rgba(158, 158, 158, 0.575);
+        width: 630px;
+        height: 320px;
+        margin-left: 1%;
+        background-color: #aaf9ff41;
+        border-left: solid 8px #ff9900;
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .div_weapon4 {
+        border-style: groove;
+        border-color: rgba(158, 158, 158, 0.575);
+        width: 630px;
+        height: 460px;
+        margin-left: 1%;
+        background-color: #aaf9ff41;
+        border-left: solid 8px #ea08ff;
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+
+    #height_weapon {
+        margin-bottom: 100px;
+    }
+
+    #pc_weapon_cp {
+        display: none;
+        visibility: hidden;
+    }
+
+    #mobile_weapon_cp {
+        display: block;
+        visibility: visible;
+    }
+
+    /*----------------------------------------------------------*/
+}
